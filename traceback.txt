@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/screens.rpy", line 14, in script
+    style default:
+  File "game/screens.rpy", line 16, in <module>
+    language gui.language
+AttributeError: 'StoreModule' object has no attribute 'language'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/screens.rpy", line 14, in script
+    style default:
+  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\ast.py", line 2801, in execute
+    self.apply()
+  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\ast.py", line 2784, in apply
+    value = renpy.python.py_eval(expr)
+  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/screens.rpy", line 16, in <module>
+    language gui.language
+AttributeError: 'StoreModule' object has no attribute 'language'
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.2.0.24012702
+BadSingular 1.0
+Tue May 14 21:34:24 2024
