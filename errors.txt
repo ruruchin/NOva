@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 222: expected statement.
-    movie_cutscene: 
-                  ^
+File "game/probel_game.rpy", line 18: reached end of line when expecting ':'.
+    if (current_time - blur_start_time >= blur_duration)
+                                                        ^
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Tue May 14 23:29:19 2024
+Thu May 16 10:27:57 2024
