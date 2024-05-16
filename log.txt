@@ -1,162 +1,37 @@
-2024-05-16 07:27:05 UTC
+2024-05-16 07:56:46 UTC
 Windows-10-10.0.19045
 Ren'Py 8.2.0.24012702
 
-Early init took 0.05s
-Loading error handling took 0.02s
-Loading script took 0.12s
+Early init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.26s
 Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-
-File "game/probel_game.rpy", line 18: if statement expects a non-empty block.
-    if (current_time - blur_start_time >= blur_duration):
-                                                         ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start took 0.37s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.52'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 14.93s
-Loading error handling took 0.02s
-Loading script took 0.10s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/probel_game.rpy", line 19: stop requires a channel
-    stop
-        ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start took 0.32s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.52'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 16.30s
-Loading error handling took 0.02s
-Loading script took 0.10s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/probel_game.rpy", line 19: stop requires a channel
-    stop
-        ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start took 0.33s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.52'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 50.18s
-Loading error handling took 0.02s
-Loading script took 0.10s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/probel_game.rpy", line 18: reached end of line when expecting ':'.
-    if (current_time - blur_start_time >= blur_duration)
-                                                        ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start took 0.34s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.52'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 51.13s
-Loading error handling took 0.02s
-Loading script took 0.10s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/probel_game.rpy", line 18: reached end of line when expecting ':'.
-    if (current_time - blur_start_time >= blur_duration)
-                                                        ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start took 0.35s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.52'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 139.63s
-Loading error handling took 0.02s
-Loading script took 0.12s
-Loading save slot metadata took 0.02s
 Loading persistent took 0.00s
 Running init code took 0.04s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.08s
+Reloading save slot metadata took 0.02s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\User\\AppData\\Roaming/RenPy/backups\\NIi':
-Dump and make backups took 0.04s
+Dump and make backups took 0.05s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.04s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.27s
+Creating interface object took 0.34s
 Cleaning stores took 0.00s
-Init translation took 0.02s
+Init translation took 0.03s
 Build styles took 0.00s
-Load screen analysis took 0.01s
+Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.01s
 Prepare screens took 0.04s
 Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
+Save bytecode. took 0.02s
 Running _start took 0.00s
-Interface start took 0.05s
+Interface start took 0.06s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -168,140 +43,3 @@ Version: b'4.6.0 NVIDIA 551.52'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
 Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 369, in script call
-    call probel_game
-  File "game/probel_game.rpy", line 3, in script
-    $ blur_start_time = random.uniform(5, 10) # Случайное время от 5 до 10 секунд
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\ast.py", line 823, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/probel_game.rpy", line 3, in <module>
-    $ blur_start_time = random.uniform(5, 10) # Случайное время от 5 до 10 секунд
-NameError: name 'random' is not defined
-
-While running game code:
-  File "game/script.rpy", line 369, in script call
-    call probel_game
-  File "game/probel_game.rpy", line 3, in script
-    $ blur_start_time = random.uniform(5, 10) # Случайное время от 5 до 10 секунд
-  File "game/probel_game.rpy", line 3, in <module>
-    $ blur_start_time = random.uniform(5, 10) # Случайное время от 5 до 10 секунд
-NameError: name 'random' is not defined
-
-Full traceback:
-  File "renpy/common/00keymap.rpy", line 487, in script
-    python hide:
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\ast.py", line 823, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00keymap.rpy", line 487, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 511, in _execute_python_hide
-    renpy.save("_reload-1", "reload save game")
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\loadsave.py", line 436, in save
-    reraise(t, e, tb)
-  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\loadsave.py", line 417, in save
-    dump((roots, renpy.game.log), logf)
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\compat\pickle.py", line 103, in dump
-    pickle.dump(o, f, pickle.HIGHEST_PROTOCOL if highest else PROTOCOL)
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\python.py", line 1275, in module_pickle
-    raise Exception("Could not pickle {!r}.".format(module))
-Exception: Could not pickle <module 'platform' from 'C:\\Users\\User\\Desktop\\Book\\renpy-8.2.0-sdk\\lib\\python3.9\\platform.pyc'>. (perhaps store.platform = <module 'platform' from 'C:\\Users\\User\\Desktop\\Book\\renpy-8.2.0-sdk\\lib\\python3.9\\platform.pyc'>)
-
-While running game code:
-  File "renpy/common/00keymap.rpy", line 487, in script
-    python hide:
-  File "renpy/common/00keymap.rpy", line 487, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 511, in _execute_python_hide
-    renpy.save("_reload-1", "reload save game")
-Exception: Could not pickle <module 'platform' from 'C:\\Users\\User\\Desktop\\Book\\renpy-8.2.0-sdk\\lib\\python3.9\\platform.pyc'>. (perhaps store.platform = <module 'platform' from 'C:\\Users\\User\\Desktop\\Book\\renpy-8.2.0-sdk\\lib\\python3.9\\platform.pyc'>)
-
-Full traceback:
-  File "renpy/common/00keymap.rpy", line 487, in script
-    python hide:
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\ast.py", line 823, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00keymap.rpy", line 487, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 511, in _execute_python_hide
-    renpy.save("_reload-1", "reload save game")
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\loadsave.py", line 436, in save
-    reraise(t, e, tb)
-  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\loadsave.py", line 417, in save
-    dump((roots, renpy.game.log), logf)
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\compat\pickle.py", line 103, in dump
-    pickle.dump(o, f, pickle.HIGHEST_PROTOCOL if highest else PROTOCOL)
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\python.py", line 1275, in module_pickle
-    raise Exception("Could not pickle {!r}.".format(module))
-Exception: Could not pickle <module 'platform' from 'C:\\Users\\User\\Desktop\\Book\\renpy-8.2.0-sdk\\lib\\python3.9\\platform.pyc'>. (perhaps store.platform = <module 'platform' from 'C:\\Users\\User\\Desktop\\Book\\renpy-8.2.0-sdk\\lib\\python3.9\\platform.pyc'>)
-
-While running game code:
-  File "renpy/common/00keymap.rpy", line 487, in script
-    python hide:
-  File "renpy/common/00keymap.rpy", line 487, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 511, in _execute_python_hide
-    renpy.save("_reload-1", "reload save game")
-Exception: Could not pickle <module 'platform' from 'C:\\Users\\User\\Desktop\\Book\\renpy-8.2.0-sdk\\lib\\python3.9\\platform.pyc'>. (perhaps store.platform = <module 'platform' from 'C:\\Users\\User\\Desktop\\Book\\renpy-8.2.0-sdk\\lib\\python3.9\\platform.pyc'>)
-
-Full traceback:
-  File "game/script.rpy", line 369, in script call
-    call probel_game
-  File "game/probel_game.rpy", line 3, in script
-    $ blur_start_time = random.uniform(5, 10) # Случайное время от 5 до 10 секунд
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\ast.py", line 823, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/probel_game.rpy", line 3, in <module>
-    $ blur_start_time = random.uniform(5, 10) # Случайное время от 5 до 10 секунд
-NameError: name 'random' is not defined
-
-While running game code:
-  File "game/script.rpy", line 369, in script call
-    call probel_game
-  File "game/probel_game.rpy", line 3, in script
-    $ blur_start_time = random.uniform(5, 10) # Случайное время от 5 до 10 секунд
-  File "game/probel_game.rpy", line 3, in <module>
-    $ blur_start_time = random.uniform(5, 10) # Случайное время от 5 до 10 секунд
-NameError: name 'random' is not defined
-
-Full traceback:
-  File "renpy/common/00keymap.rpy", line 487, in script
-    python hide:
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\ast.py", line 823, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00keymap.rpy", line 487, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 511, in _execute_python_hide
-    renpy.save("_reload-1", "reload save game")
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\loadsave.py", line 436, in save
-    reraise(t, e, tb)
-  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\loadsave.py", line 417, in save
-    dump((roots, renpy.game.log), logf)
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\compat\pickle.py", line 103, in dump
-    pickle.dump(o, f, pickle.HIGHEST_PROTOCOL if highest else PROTOCOL)
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\python.py", line 1275, in module_pickle
-    raise Exception("Could not pickle {!r}.".format(module))
-Exception: Could not pickle <module 'platform' from 'C:\\Users\\User\\Desktop\\Book\\renpy-8.2.0-sdk\\lib\\python3.9\\platform.pyc'>. (perhaps store.platform = <module 'platform' from 'C:\\Users\\User\\Desktop\\Book\\renpy-8.2.0-sdk\\lib\\python3.9\\platform.pyc'>)
-
-While running game code:
-  File "renpy/common/00keymap.rpy", line 487, in script
-    python hide:
-  File "renpy/common/00keymap.rpy", line 487, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 511, in _execute_python_hide
-    renpy.save("_reload-1", "reload save game")
-Exception: Could not pickle <module 'platform' from 'C:\\Users\\User\\Desktop\\Book\\renpy-8.2.0-sdk\\lib\\python3.9\\platform.pyc'>. (perhaps store.platform = <module 'platform' from 'C:\\Users\\User\\Desktop\\Book\\renpy-8.2.0-sdk\\lib\\python3.9\\platform.pyc'>)
