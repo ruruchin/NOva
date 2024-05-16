@@ -1,64 +1,37 @@
-2024-05-16 09:44:12 UTC
+2024-05-16 18:07:09 UTC
 Windows-10-10.0.19045
 Ren'Py 8.2.0.24012702
 
 Early init took 0.08s
 Loading error handling took 0.03s
-Loading script took 0.77s
-Loading save slot metadata took 0.03s
+Loading script took 0.28s
+Loading save slot metadata took 0.07s
 Loading persistent took 0.00s
-
-The label kidzuki_park_one is defined twice, at File "game/Persona/Kidzyki.rpy", line 1:
-label kidzuki_park_one:
-and File "game/Persona/Kidzyki.rpy", line 6:
-label kidzuki_park_one:
-
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start took 0.57s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.52'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 30.88s
-Loading error handling took 0.02s
-Loading script took 0.57s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.02s
+Running init code took 0.05s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
+Reloading save slot metadata took 0.05s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\User\\AppData\\Roaming/RenPy/backups\\NIi':
 Dump and make backups took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.04s
+Initial gc took 0.03s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
 Creating interface object took 0.26s
 Cleaning stores took 0.00s
-Init translation took 0.02s
+Init translation took 0.03s
 Build styles took 0.00s
-Load screen analysis took 0.00s
+Load screen analysis took 0.01s
 Analyze screens took 0.01s
 Save screen analysis took 0.01s
 Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.02s
 Running _start took 0.00s
-Interface start took 0.05s
+Interface start took 0.06s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -72,7 +45,7 @@ Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
 Maximum texture size: 4096x4096
 
 Full traceback:
-  File "game/script.rpy", line 372, in script call
+  File "game/script.rpy", line 371, in script call
     call probel_game
   File "game/probel_game.rpy", line 6, in script
     $ start_time = renpy.get_time()
@@ -85,7 +58,7 @@ Full traceback:
 AttributeError: module 'renpy.exports' has no attribute 'get_time'
 
 While running game code:
-  File "game/script.rpy", line 372, in script call
+  File "game/script.rpy", line 371, in script call
     call probel_game
   File "game/probel_game.rpy", line 6, in script
     $ start_time = renpy.get_time()
@@ -94,29 +67,7 @@ While running game code:
 AttributeError: module 'renpy.exports' has no attribute 'get_time'
 
 Full traceback:
-  File "game/script.rpy", line 372, in script call
-    call probel_game
-  File "game/probel_game.rpy", line 6, in script
-    $ start_time = renpy.get_time()
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\ast.py", line 823, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/probel_game.rpy", line 6, in <module>
-    $ start_time = renpy.get_time()
-AttributeError: module 'renpy.exports' has no attribute 'get_time'
-
-While running game code:
-  File "game/script.rpy", line 372, in script call
-    call probel_game
-  File "game/probel_game.rpy", line 6, in script
-    $ start_time = renpy.get_time()
-  File "game/probel_game.rpy", line 6, in <module>
-    $ start_time = renpy.get_time()
-AttributeError: module 'renpy.exports' has no attribute 'get_time'
-
-Full traceback:
-  File "game/script.rpy", line 372, in script call
+  File "game/script.rpy", line 371, in script call
     call probel_game
   File "game/probel_game.rpy", line 9, in script
     show screen main_game_screen
@@ -134,7 +85,7 @@ Exception: Screen main_game_screen is not known.
 
 
 While running game code:
-  File "game/script.rpy", line 372, in script call
+  File "game/script.rpy", line 371, in script call
     call probel_game
   File "game/probel_game.rpy", line 9, in script
     show screen main_game_screen
@@ -144,7 +95,7 @@ Exception: Screen main_game_screen is not known.
 
 
 Full traceback:
-  File "game/script.rpy", line 372, in script call
+  File "game/script.rpy", line 371, in script call
     call probel_game
   File "game/probel_game.rpy", line 11, in script
     while game_running:
@@ -159,10 +110,33 @@ Full traceback:
 NameError: name 'game_running' is not defined
 
 While running game code:
-  File "game/script.rpy", line 372, in script call
+  File "game/script.rpy", line 371, in script call
     call probel_game
   File "game/probel_game.rpy", line 11, in script
     while game_running:
   File "game/probel_game.rpy", line 11, in <module>
     while game_running:
 NameError: name 'game_running' is not defined
+
+Full traceback:
+  File "game/script.rpy", line 504, in script
+    gg "Тешь себя, ведь ты 100% можешь не выходить за рамки. Тешь себя, что ты прожил немногим дольше людей, которые закончили свои полёты раньше тебя."
+  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\ast.py", line 2557, in execute
+    Say.execute(self)
+  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\exports.py", line 1482, in say
+    what = what % tag_quoting_dict
+ValueError: unsupported format character '?' (0x43c) at index 24
+
+While running game code:
+  File "game/script.rpy", line 504, in script
+    gg "Тешь себя, ведь ты 100% можешь не выходить за рамки. Тешь себя, что ты прожил немногим дольше людей, которые закончили свои полёты раньше тебя."
+ValueError: unsupported format character '?' (0x43c) at index 24
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s

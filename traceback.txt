@@ -1,32 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 372, in script call
-    call probel_game
-  File "game/probel_game.rpy", line 11, in script
-    while game_running:
-  File "game/probel_game.rpy", line 11, in <module>
-    while game_running:
-NameError: name 'game_running' is not defined
+  File "game/script.rpy", line 504, in script
+    gg "Тешь себя, ведь ты 100% можешь не выходить за рамки. Тешь себя, что ты прожил немногим дольше людей, которые закончили свои полёты раньше тебя."
+ValueError: unsupported format character '?' (0x43c) at index 24
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 372, in script call
-    call probel_game
-  File "game/probel_game.rpy", line 11, in script
-    while game_running:
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\ast.py", line 1785, in execute
-    if renpy.python.py_eval(self.condition):
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/probel_game.rpy", line 11, in <module>
-    while game_running:
-NameError: name 'game_running' is not defined
+  File "game/script.rpy", line 504, in script
+    gg "Тешь себя, ведь ты 100% можешь не выходить за рамки. Тешь себя, что ты прожил немногим дольше людей, которые закончили свои полёты раньше тебя."
+  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\ast.py", line 2557, in execute
+    Say.execute(self)
+  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\exports.py", line 1482, in say
+    what = what % tag_quoting_dict
+ValueError: unsupported format character '?' (0x43c) at index 24
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.0.24012702
 BadSingular 1.0
-Thu May 16 12:46:09 2024
+Thu May 16 21:08:23 2024
