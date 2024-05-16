@@ -1,5 +1,0 @@
-# Игнорировать все скомпилированные файлы Ren'Py
-*.rpyc
-# Игнорировать папки autosaves и persistent
-autosaves/
-persistent/

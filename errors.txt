@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/probel_game.rpy", line 18: reached end of line when expecting ':'.
-    if (current_time - blur_start_time >= blur_duration)
-                                                        ^
+The label kidzuki_park_one is defined twice, at File "game/Persona/Kidzyki.rpy", line 1:
+label kidzuki_park_one:
+and File "game/Persona/Kidzyki.rpy", line 6:
+label kidzuki_park_one:
+
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Thu May 16 10:27:57 2024
+Thu May 16 12:44:12 2024

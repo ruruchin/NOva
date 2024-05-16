@@ -43,7 +43,6 @@ image lil_darkie_two = Glitch("lil_darkie_two.png")
   
 # Определение персонажей игры.
 define effi = Character('Эффи', color="#000000")
-
 define gg = Character('[gg]', color="#000000")
 
 # ДАты которые будут говорить
