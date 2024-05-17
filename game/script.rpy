@@ -79,14 +79,12 @@ label start:
     $ renpy.pause(2.0, hard = True)
     $ persistent.changed_music = False
     $ renpy.save_persistent()
-     
-    
-    
    
 
 # Определение главы 1
 label chapter_one:
-    
+    call lock_init
+    call lock_start
 
     $ gg = renpy.input("Как тебя зовут?")
     $ gg = gg.strip()
@@ -141,7 +139,7 @@ label chapter_one:
     # Диалоги и события первой главы
     effi "Это наша первая встреча."
     effi "Как ты думаешь, что произойдет?"
-    jump NAC   
+    # jump NAC   
 
 
 label NAC:
