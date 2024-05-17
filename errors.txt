@@ -2,11 +2,11 @@
 errors listed below, and try again.
 
 
-The label kidzuki_park_one is defined twice, at File "game/Persona/Kidzyki.rpy", line 1:
-label kidzuki_park_one:
-and File "game/Persona/Kidzyki.rpy", line 6:
-label kidzuki_park_one:
+The label probel_game is defined twice, at File "game/mini_games/probel_game.rpyc", line 2:
+
+and File "game/probel_game.rpyc", line 2:
+
 
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Thu May 16 12:44:12 2024
+Fri May 17 18:11:11 2024
