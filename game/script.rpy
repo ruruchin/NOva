@@ -74,17 +74,16 @@ init python:
 # Игра начинается здесь:
 label start:
     hide quick_menu
-    $ renpy.movie_cutscene('video/movie.ogv')
+   
     stop music fadeout 1.0
-    $ renpy.pause(2.0, hard = True)
+    
     $ persistent.changed_music = False
     $ renpy.save_persistent()
    
 
 # Определение главы 1
 label chapter_one:
-    call lock_init
-    call lock_start
+   
 
     $ gg = renpy.input("Как тебя зовут?")
     $ gg = gg.strip()
