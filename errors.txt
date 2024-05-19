@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 128: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
-    zomm 1
-          ^
+File "game/screens.rpy", line 309: 'else' is not a keyword argument or valid child of the vbox statement.
+    else:
+        ^
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Sun May 19 03:40:01 2024
+Sun May 19 12:02:59 2024

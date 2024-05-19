@@ -302,16 +302,17 @@ screen navigation():
         if main_menu:
 
             textbutton _("Начать") action Start()
+            textbutton _("Загрузить") action ShowMenu("load")
+
+            textbutton _("Настройки") action ShowMenu("preferences")
 
         else:
 
             textbutton _("История") action ShowMenu("history")
 
             textbutton _("Сохранить") action ShowMenu("save")
-
-        textbutton _("Загрузить") action ShowMenu("load")
-
-        textbutton _("Настройки") action ShowMenu("preferences") 
+        
+            textbutton _("Главное меню") action MainMenu() 
        
 
         if _in_replay:
@@ -576,7 +577,7 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Сделано с помощью {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("Сделано с помощью божбей силы")
 
 
 style about_label is gui_label

@@ -33,7 +33,7 @@ define gui.idle_color = '#000000'
 
 ## Small_color используется в маленьком тексте, который должен быть ярче/темнее,
 ## для того, чтобы выделяться.
-define gui.idle_small_color = '#414141'
+define gui.idle_small_color = '#dadada'
 
 ## Цвет, используемых в кнопках и панелях, когда они наведены.
 define gui.hover_color = '#000000'
@@ -44,12 +44,12 @@ define gui.hover_color = '#000000'
 define gui.selected_color = '#ffffff'
 
 ## Цвет, используемый текстовой кнопкой, когда она не может быть выбрана.
-define gui.insensitive_color = '#7070707f'
+define gui.insensitive_color = '#0000007f'
 
 ## Цвета, используемые для частей панелей, которые не заполняются. Они
 ## используются не напрямую, а только при воссоздании файлов изображений.
-define gui.muted_color = '#666666'
-define gui.hover_muted_color = '#999999'
+define gui.muted_color = '#ffffff'
+define gui.hover_muted_color = '#ffffff'
 
 ## Цвета, используемые в тексте диалогов и выборов.
 define gui.text_color = '#ffffff'
@@ -189,7 +189,7 @@ define gui.radio_button_borders = Borders(27, 6, 6, 6)
 
 define gui.check_button_borders = Borders(27, 6, 6, 6)
 
-define gui.confirm_button_text_xalign = 0.5
+define gui.confirm_button_text_xalign = 0.3
 
 define gui.page_button_borders = Borders(15, 6, 15, 6)
 
@@ -202,7 +202,7 @@ define gui.quick_button_text_selected_color = gui.accent_color
 ## именованные переменные. Например, вы можете раскомментировать следующую
 ## строчку, чтобы установить ширину кнопок навигации.
 
-# define gui.navigation_button_width = 250
+#define gui.navigation_button_width = 250
 
 
 ## Кнопки Выбора ###############################################################
@@ -217,8 +217,8 @@ define gui.choice_button_text_font = gui.text_font
 define gui.choice_button_text_size = gui.text_size
 define gui.choice_button_text_xalign = 0.5
 define gui.choice_button_text_idle_color = '#ffffff'
-define gui.choice_button_text_hover_color = "#ffffffe8"
-define gui.choice_button_text_insensitive_color = '#7070707f'
+define gui.choice_button_text_hover_color = "#ffffffff"
+define gui.choice_button_text_insensitive_color = '#ffffffff'
 
 
 ## Кнопки Слотов ###############################################################
@@ -238,11 +238,11 @@ define gui.slot_button_text_selected_idle_color = gui.selected_color
 define gui.slot_button_text_selected_hover_color = gui.hover_color
 
 ## Ширина и высота миниатюры, используемой слотом сохранения.
-define config.thumbnail_width = 384
+define config.thumbnail_width = 400
 define config.thumbnail_height = 216
 
 ## Количество колонок и рядов в таблице слотов.
-define gui.file_slot_cols = 3
+define gui.file_slot_cols = 2
 define gui.file_slot_rows = 2
 
 
@@ -271,10 +271,10 @@ define gui.navigation_spacing = 6
 define gui.pref_spacing = 15
 
 ## Контролирует интервал между кнопками настройки.
-define gui.pref_button_spacing = 0
+define gui.pref_button_spacing = 10
 
 ## Интервал между кнопками страниц.
-define gui.page_spacing = 0
+define gui.page_spacing = 10
 
 ## Интервал между слотами.
 define gui.slot_spacing = 15
