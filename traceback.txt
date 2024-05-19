@@ -1,26 +1,39 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/lock.rpy", line 1, in script
-    init python:
-  File "game/lock.rpy", line 14, in <module>
-    images_auto()
-NameError: name 'images_auto' is not defined
+  File "renpy/common/00keymap.rpy", line 485, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 485, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 509, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+Exception: Could not pickle <module 'platform' from 'D:\\Soft\\RenPy\\renpy-8.1.3-sdk\\lib\\python3.9\\platform.pyc'>. (perhaps store.platform = <module 'platform' from 'D:\\Soft\\RenPy\\renpy-8.1.3-sdk\\lib\\python3.9\\platform.pyc'>)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/lock.rpy", line 1, in script
-    init python:
+  File "renpy/common/00keymap.rpy", line 485, in script
+    python hide:
   File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\ast.py", line 1138, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\python.py", line 1122, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "game/lock.rpy", line 14, in <module>
-    images_auto()
-NameError: name 'images_auto' is not defined
+  File "renpy/common/00keymap.rpy", line 485, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 509, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\loadsave.py", line 432, in save
+    reraise(t, e, tb)
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\loadsave.py", line 413, in save
+    dump((roots, renpy.game.log), logf)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\compat\pickle.py", line 103, in dump
+    pickle.dump(o, f, pickle.HIGHEST_PROTOCOL if highest else PROTOCOL)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\python.py", line 1219, in module_pickle
+    raise Exception("Could not pickle {!r}.".format(module))
+Exception: Could not pickle <module 'platform' from 'D:\\Soft\\RenPy\\renpy-8.1.3-sdk\\lib\\python3.9\\platform.pyc'>. (perhaps store.platform = <module 'platform' from 'D:\\Soft\\RenPy\\renpy-8.1.3-sdk\\lib\\python3.9\\platform.pyc'>)
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.1.3.23091805
 Zero Keep Out 1.0
-Sun May 19 17:27:34 2024
+Sun May 19 18:50:52 2024
