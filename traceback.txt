@@ -1,49 +1,39 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 79, in script
-    $ renpy.pause(2.0, hard = True)
-  File "game/script.rpy", line 79, in <module>
-    $ renpy.pause(2.0, hard = True)
-OSError: Couldn't find file 'video/movie.ogv'.
+  File "renpy/common/00keymap.rpy", line 487, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 487, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 511, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+Exception: Could not pickle <module 'platform' from 'C:\\Users\\User\\Desktop\\Book\\renpy-8.2.0-sdk\\lib\\python3.9\\platform.pyc'>. (perhaps store.platform = <module 'platform' from 'C:\\Users\\User\\Desktop\\Book\\renpy-8.2.0-sdk\\lib\\python3.9\\platform.pyc'>)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 79, in script
-    $ renpy.pause(2.0, hard = True)
+  File "renpy/common/00keymap.rpy", line 487, in script
+    python hide:
   File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\ast.py", line 823, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\python.py", line 1178, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "game/script.rpy", line 79, in <module>
-    $ renpy.pause(2.0, hard = True)
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\exports.py", line 1661, in pause
-    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay, pause_modal=modal)
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\display\core.py", line 2165, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\display\core.py", line 2730, in interact_core
-    renpy.audio.audio.interact()
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\audio\audio.py", line 1251, in interact
-    periodic()
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\audio\audio.py", line 1205, in periodic
-    raise_(exc[0], exc[1], exc[2])
+  File "renpy/common/00keymap.rpy", line 487, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 511, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\loadsave.py", line 436, in save
+    reraise(t, e, tb)
   File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\audio\audio.py", line 1183, in periodic_thread_main
-    periodic_pass()
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\audio\audio.py", line 1125, in periodic_pass
-    c.periodic()
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\audio\audio.py", line 534, in periodic
-    topf = load(filename)
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\audio\audio.py", line 72, in load
-    rv = renpy.loader.load(fn, directory="audio")
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\loader.py", line 672, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'video/movie.ogv'.
+  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\loadsave.py", line 417, in save
+    dump((roots, renpy.game.log), logf)
+  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\compat\pickle.py", line 103, in dump
+    pickle.dump(o, f, pickle.HIGHEST_PROTOCOL if highest else PROTOCOL)
+  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\python.py", line 1275, in module_pickle
+    raise Exception("Could not pickle {!r}.".format(module))
+Exception: Could not pickle <module 'platform' from 'C:\\Users\\User\\Desktop\\Book\\renpy-8.2.0-sdk\\lib\\python3.9\\platform.pyc'>. (perhaps store.platform = <module 'platform' from 'C:\\Users\\User\\Desktop\\Book\\renpy-8.2.0-sdk\\lib\\python3.9\\platform.pyc'>)
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.0.24012702
-BadSingular 1.0
-Sun May 19 02:21:48 2024
+Zero Keep Out 1.0
+Sun May 19 11:34:19 2024

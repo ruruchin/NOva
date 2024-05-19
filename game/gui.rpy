@@ -26,22 +26,22 @@ define config.check_conflicting_properties = True
 ## Цвета текста в интерфейсе.
 
 ## Акцентный цвет используется в заголовках и подчёркнутых текстах.
-define gui.accent_color = '#ff0000'
+define gui.accent_color = '#000000'
 
 ## Цвет, используемый в текстовой кнопке, когда она не выбрана и не наведена.
-define gui.idle_color = '#ff0000'
+define gui.idle_color = '#000000'
 
 ## Small_color используется в маленьком тексте, который должен быть ярче/темнее,
 ## для того, чтобы выделяться.
-define gui.idle_small_color = '#ffffff'
+define gui.idle_small_color = '#414141'
 
 ## Цвет, используемых в кнопках и панелях, когда они наведены.
-define gui.hover_color = '#c41700'
+define gui.hover_color = '#000000'
 
 ## Цвет, используемый текстовой кнопкой, когда она выбрана, но не наведена.
 ## Кнопка может быть выбрана, если это текущий экран или текущее значение
 ## настройки.
-define gui.selected_color = '#555555'
+define gui.selected_color = '#ffffff'
 
 ## Цвет, используемый текстовой кнопкой, когда она не может быть выбрана.
 define gui.insensitive_color = '#7070707f'
@@ -68,7 +68,7 @@ define gui.name_text_font = "Caveat-VariableFont_wght.ttf"
 define gui.interface_text_font = "Lobster-Regular.ttf"
 
 ## Размер нормального текста диалога.
-define gui.text_size = 38
+define gui.text_size = 32
 
 ## Размер имён персонажей.
 define gui.name_text_size = 62
