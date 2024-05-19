@@ -1,11 +1,11 @@
 init python:
     lock_key_t = 0.25  # V перемещания отмычки 
     lock_min_t, lock_max_t = 0.35, 0.65  # V сокращение пружины  
-    lock_pin_xstep = 144  # между штифтами
+    lock_pin_xstep = 149  # между штифтами
     lock_pin_ystep = 80  # ход пружины 
     lock_pin_width, lock_pin_height = 100, 140
     lock_spr_height = 210
-    lock_spr_x0, lock_spr_y0 = 405, 185
+    lock_spr_x0, lock_spr_y0 = 388, 170
     lock_max_i = 5
 
     lock_check = False
@@ -73,8 +73,8 @@ init python:
         for i in range(lock_pin_count):
             xx, yy = lock_pin[i].spr_x + 20, lock_pin[i].y + lock_pin_height
 
-            for iy in range(1):
-                for ix in range(3):
+            for iy in range(3):
+                for ix in range(1):
                     if is_opaque("key", xx + ix * 20 - x, yy - y - iy * 8):
                         lock_check, lock_error = False, True
 
@@ -87,6 +87,7 @@ init python:
                         return True
         return False
 
+
 init -1:
     transform lock_spr_at(i):
         function renpy.curry(lock_spr_at_f)(i)
@@ -94,7 +95,7 @@ init -1:
     transform lock_pin_at(i):
         function renpy.curry(lock_pin_at_f)(i)
 
-label lock_init(pins=5, bg="bg"):
+label lock_init(pins=5, bg="lock bg"):
     python:
         lock_game_mode = False
         lock_i = 0

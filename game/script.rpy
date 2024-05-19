@@ -72,6 +72,7 @@ init python:
 
 # Игра начинается здесь:
 label start:
+    camera at parallax_off
     hide quick_menu
    
     stop music fadeout 1.0

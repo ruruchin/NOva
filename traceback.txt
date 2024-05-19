@@ -1,38 +1,38 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 152, in script call
-    call paralax
-  File "game/script.rpy", line 583, in script call
-    call рассказать
-  File "game/Locations/cafe.rpy", line 2, in script
-    scene bg in_cafe with dissolve
-Exception: Image 'bg' does not accept attributes 'in_cafe'.
+  File "game/script.rpy", line 87, in script call
+    call lock_start
+  File "game/lock.rpy", line 125, in script
+    pause
+  File "renpy/common/000statements.rpy", line 461, in execute_pause
+    renpy.pause()
+Exception: Cannot start an interaction in the middle of an interaction, without creating a new context.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 152, in script call
-    call paralax
-  File "game/script.rpy", line 583, in script call
-    call рассказать
-  File "game/Locations/cafe.rpy", line 2, in script
-    scene bg in_cafe with dissolve
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\ast.py", line 1247, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\ast.py", line 1076, in show_imspec
-    renpy.config.show(name,
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\exports.py", line 739, in show
-    if not base.find_target() and renpy.config.missing_show:
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\display\image.py", line 421, in find_target
-    self.target = target._duplicate(a)
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\display\displayable.py", line 246, in _duplicate
-    args.extraneous()
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\display\displayable.py", line 109, in extraneous
-    raise Exception("Image '{}' does not accept attributes '{}'.".format(
-Exception: Image 'bg' does not accept attributes 'in_cafe'.
+  File "game/script.rpy", line 87, in script call
+    call lock_start
+  File "game/lock.rpy", line 125, in script
+    pause
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\ast.py", line 2259, in execute
+    self.call("execute")
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\ast.py", line 2241, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\statements.py", line 342, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 461, in execute_pause
+    renpy.pause()
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\exports.py", line 1638, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay, pause_modal=modal)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\display\core.py", line 3551, in interact
+    raise Exception("Cannot start an interaction in the middle of an interaction, without creating a new context.")
+Exception: Cannot start an interaction in the middle of an interaction, without creating a new context.
 
-Windows-10-10.0.19045 AMD64
-Ren'Py 8.2.0.24012702
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.1.3.23091805
 Zero Keep Out 1.0
-Sun May 19 12:54:12 2024
+Sun May 19 16:44:28 2024
