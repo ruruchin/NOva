@@ -82,6 +82,9 @@ label start:
 
 # Определение главы 1
 label chapter_one:
+    call lock_init
+    call lock_start
+
     $ gg = renpy.input("Как тебя зовут?")
     $ gg = gg.strip()
     if not gg:
