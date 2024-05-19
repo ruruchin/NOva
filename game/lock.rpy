@@ -1,11 +1,11 @@
 init python:
     lock_key_t = 0.25  # V перемещания отмычки 
     lock_min_t, lock_max_t = 0.35, 0.65  # V сокращение пружины  
-    lock_pin_xstep = 149  # между штифтами
+    lock_pin_xstep = 154  # между штифтами
     lock_pin_ystep = 80  # ход пружины 
     lock_pin_width, lock_pin_height = 100, 140
     lock_spr_height = 210
-    lock_spr_x0, lock_spr_y0 = 388, 170
+    lock_spr_x0, lock_spr_y0 = 375, 170
     lock_max_i = 5
 
     lock_check = False

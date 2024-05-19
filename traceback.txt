@@ -1,38 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 87, in script call
-    call lock_start
-  File "game/lock.rpy", line 125, in script
-    pause
-  File "renpy/common/000statements.rpy", line 461, in execute_pause
-    renpy.pause()
-Exception: Cannot start an interaction in the middle of an interaction, without creating a new context.
+  File "game/lock.rpy", line 1, in script
+    init python:
+  File "game/lock.rpy", line 14, in <module>
+    images_auto()
+NameError: name 'images_auto' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 87, in script call
-    call lock_start
-  File "game/lock.rpy", line 125, in script
-    pause
-  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\ast.py", line 2259, in execute
-    self.call("execute")
-  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\ast.py", line 2241, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\statements.py", line 342, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 461, in execute_pause
-    renpy.pause()
-  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\exports.py", line 1638, in pause
-    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay, pause_modal=modal)
-  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\display\core.py", line 3551, in interact
-    raise Exception("Cannot start an interaction in the middle of an interaction, without creating a new context.")
-Exception: Cannot start an interaction in the middle of an interaction, without creating a new context.
+  File "game/lock.rpy", line 1, in script
+    init python:
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/lock.rpy", line 14, in <module>
+    images_auto()
+NameError: name 'images_auto' is not defined
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.1.3.23091805
 Zero Keep Out 1.0
-Sun May 19 16:44:28 2024
+Sun May 19 17:27:34 2024
