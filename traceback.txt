@@ -1,92 +1,38 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-<<<<<<< HEAD
-After initialization, but before game start.
-  File "renpy/common/00start.rpy", line 83, in _init_language
-    renpy.change_language(language)
-  File "game/screens.rpy", line 61, in <module>
-    xsize gui.scrollbar_sizeЯЁ
-AttributeError: 'StoreModule' object has no attribute 'scrollbar_sizeЯЁ'
-=======
 While running game code:
-  File "game/script.rpy", line 86, in script call
-    call lock_start
-  File "game/lock.rpy", line 127, in script
-    pause
-  File "renpy/common/000statements.rpy", line 461, in execute_pause
-    renpy.pause()
-OSError: Couldn't find file 'audio/right.ogg'.
->>>>>>> 6ce1b0403b7b3fa1c808b2d48be57a626deaf70d
+  File "game/script.rpy", line 152, in script call
+    call paralax
+  File "game/script.rpy", line 583, in script call
+    call рассказать
+  File "game/Locations/cafe.rpy", line 2, in script
+    scene bg in_cafe with dissolve
+Exception: Image 'bg' does not accept attributes 'in_cafe'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-<<<<<<< HEAD
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\main.py", line 635, in main
-    run(restart)
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\main.py", line 75, in run
-    renpy.translation.init_translation()
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\translation\__init__.py", line 664, in init_translation
-    renpy.store._init_language() # type: ignore
-  File "renpy/common/00start.rpy", line 83, in _init_language
-    renpy.change_language(language)
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\translation\__init__.py", line 758, in change_language
-    new_change_language(tl, language)
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\translation\__init__.py", line 710, in new_change_language
-    i.apply()
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\ast.py", line 2784, in apply
-    value = renpy.python.py_eval(expr)
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/screens.rpy", line 61, in <module>
-    xsize gui.scrollbar_sizeЯЁ
-AttributeError: 'StoreModule' object has no attribute 'scrollbar_sizeЯЁ'
-=======
-  File "game/script.rpy", line 86, in script call
-    call lock_start
-  File "game/lock.rpy", line 127, in script
-    pause
-  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\ast.py", line 2259, in execute
-    self.call("execute")
-  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\ast.py", line 2241, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\statements.py", line 342, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 461, in execute_pause
-    renpy.pause()
-  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\exports.py", line 1638, in pause
-    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay, pause_modal=modal)
-  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\display\core.py", line 3582, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\display\core.py", line 4379, in interact_core
-    renpy.audio.audio.periodic()
-  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\audio\audio.py", line 1224, in periodic
-    raise_(exc[0], exc[1], exc[2])
-  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
-  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\audio\audio.py", line 1202, in periodic_thread_main
-    periodic_pass()
-  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\audio\audio.py", line 1144, in periodic_pass
-    c.periodic()
-  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\audio\audio.py", line 534, in periodic
-    topf = load(filename)
-  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\audio\audio.py", line 72, in load
-    rv = renpy.loader.load(fn, directory="audio")
-  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\loader.py", line 833, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'audio/right.ogg'.
->>>>>>> 6ce1b0403b7b3fa1c808b2d48be57a626deaf70d
+  File "game/script.rpy", line 152, in script call
+    call paralax
+  File "game/script.rpy", line 583, in script call
+    call рассказать
+  File "game/Locations/cafe.rpy", line 2, in script
+    scene bg in_cafe with dissolve
+  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\ast.py", line 1247, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\ast.py", line 1076, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\exports.py", line 739, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\display\displayable.py", line 246, in _duplicate
+    args.extraneous()
+  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'bg' does not accept attributes 'in_cafe'.
 
-Windows-10-10.0.22631 AMD64
-Ren'Py 8.1.3.23091805
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.2.0.24012702
 Zero Keep Out 1.0
-<<<<<<< HEAD
-Sun May 19 12:22:59 2024
-=======
-Sun May 19 11:48:05 2024
->>>>>>> 6ce1b0403b7b3fa1c808b2d48be57a626deaf70d
+Sun May 19 12:54:12 2024
