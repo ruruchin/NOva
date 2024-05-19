@@ -359,7 +359,7 @@ screen main_menu():
     
     # Предварительные операции, например, управление музыкой
     python:
-        renpy.music.queue("music/main.mp3", channel="music", fadein=2.0)
+        renpy.music.queue("music/midnight stroll.mp3", channel="music", fadein=2.0)
    
     # Условие для изменения фона
     if persistent.changed_background:

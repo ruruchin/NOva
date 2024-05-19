@@ -34,7 +34,7 @@ init -3 python:
     # для фона
     def far_f(trans, st, at):
         trans.zpos = -750 if persistent.parallax else 0
-        trans.zoom = 1.035 if persistent.parallax else 1
+        trans.zoom = 1.06 if persistent.parallax else 1
         return 1 / 30.
 
     # для спрайтов
