@@ -1,12 +1,5 @@
-﻿# Уровень элементов
-# Контроль самого мата в новелле
-define persistent.profanity = 0
+﻿define persistent.profanity = 0
 ############################################################
-"""
-
-скрипт
-
-""" # Позволяет сразу присваивать значение какой-либо сцене при -> scene room at zoom_1
 
 transform zoom_1:   
     zoom 1.0
@@ -17,10 +10,10 @@ transform effi_position:
 
 #############################################################
 init python:
-    import random  # Добавляем импорт модуля random
+    import random  
     import renpy.exports as renpy
-default preferences.audio_when_minimized = False # Сделал для того чтобы при свёртывании игры не играла музыка
-# Вы можете расположить сценарий своей игры в этом файле.
+default preferences.audio_when_minimized = False 
+
 label open_document:
     python:
         import os
@@ -140,7 +133,6 @@ label chapter_one:
      
     
     "Хочется быть комком."
-    # Диалоги и события первой главы
     effi "Это наша первая встреча."
     effi "Как ты думаешь, что произойдет?"
     scene bg fonnav
