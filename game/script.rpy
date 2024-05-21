@@ -14,26 +14,26 @@ init python:
     import renpy.exports as renpy
 default preferences.audio_when_minimized = False 
 
-label open_document:
-    python:
-        import os
-        import platform
-        import subprocess
+# label open_document:
+#     python:
+#         import os
+#         import platform
+#         import subprocess
 
-        # Путь к файлу, относительно директории игры
-        file_path = "documents/document.txt"
-        full_path = os.path.join(renpy.config.gamedir, file_path)
+#         # Путь к файлу, относительно директории игры
+#         file_path = "documents/document.txt"
+#         full_path = os.path.join(renpy.config.gamedir, file_path)
 
-        # Проверяем операционную систему
-        if platform.system() == "Windows": # Для настоящих мужчин
-            subprocess.Popen(["start", full_path], shell=True)
-        elif platform.system() == "Darwin": # Для мака
-            subprocess.Popen(["open", full_path])
-        else:  # Для линуксов
-            subprocess.Popen(["xdg-open", full_path])
+#         # Проверяем операционную систему
+#         if platform.system() == "Windows": # Для настоящих мужчин
+#             subprocess.Popen(["start", full_path], shell=True)
+#         elif platform.system() == "Darwin": # Для мака
+#             subprocess.Popen(["open", full_path])
+#         else:  # Для линуксов
+#             subprocess.Popen(["xdg-open", full_path])
 
 
-    return
+#     return
 
 image lil_darkie = Glitch("lil_darkie.png")  
 image lil_darkie_two = Glitch("lil_darkie_two.png")  
@@ -339,12 +339,7 @@ label posleSna:
     "Остаток своего дня я провел довольно продуктивно."
     "Казалось, что моя сетчатка разрывается  после слез за обеденным столом и мешает мне заполнять все те бланки, которые я должен был подписать ещё несколько занятий назад."
     "Я сделал львиную долю всей своей домашней работы, а также начал готовить свою сумку для начала нового завтрашнего дня."
-    menu:
-        "Продолжить игру (документ)":
-            $ renpy.call_in_new_context("open_document")
-            jump scnd_chapter
-        
-         
+    jump scnd_chapterS
 return
 
 label scnd_chapter:
@@ -652,9 +647,8 @@ label Hes_yshol:
     menu:
         "Что она тебе успела наговорить?":
             call рассказать
-            hide kidz_smile
-
+            
         "Как у неё язык изо рта еще не выпал":
             call язвить
-            hide kidz_smile
+           
 return
