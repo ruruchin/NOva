@@ -37,13 +37,7 @@
         <li><a href="#Создано с помощью RenPy">Что такое RenPy?</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Начало работы</a>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Miro</a></li>
     <li><a href="#contributing">Ссылки на создателей</a></li>
-    <li><a href="#license">Авторские права</a></li>
   </ol>
 </details>
 
@@ -95,35 +89,22 @@ Ren'Py позволяет создавать сложные сюжеты и ин
 
 
 
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-
-
-
 <!-- CONTRIBUTING -->
 # Contributing
 
 ## Участники команды разработчиков визуальной новеллы "Zero Keep Out"
 <br>
-### <strong>Зоренко Константин</strong> -> (ruruchin)
-Разработчик на Ren'Py, Писатель
-Ссылка на GitHub: https://github.com/ruruchin
+<strong>Зоренко Константин</strong> -> (ruruchin)<br>
+Разработчик на Ren'Py, Писатель<br>
+Ссылка на GitHub: https://github.com/ruruchin<br>
 <br>
-### <strong>Кузнецова Анастасия</strong> -> (Kollkad)
-Разработчик на Ren'Py, Художник
-Ссылка на GitHub: https://github.com/Kollkad
+<strong>Кузнецова Анастасия</strong> -> (Kollkad)<br>
+Разработчик на Ren'Py, Художник<br>
+Ссылка на GitHub: https://github.com/Kollkad<br>
 <br>
-### <strong>Светличный Никита</strong> -> (bybuss)
-Разработчик на Ren'Py, Музыкант, Тестировщик
-Ссылка на GitHub: https://github.com/bybuss
+<strong>Светличный Никита</strong> -> (bybuss)<br>
+Разработчик на Ren'Py, Музыкант, Тестировщик<br>
+Ссылка на GitHub: https://github.com/bybuss<br>
 
 
 
