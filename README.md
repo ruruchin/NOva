@@ -32,63 +32,67 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#about-the-project">О проекте</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#Создано с помощью RenPy">Что такое RenPy?</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
+      <a href="#getting-started">Начало работы</a>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#roadmap">Miro</a></li>
+    <li><a href="#contributing">Ссылки на создателей</a></li>
+    <li><a href="#license">Авторские права</a></li>
   </ol>
 </details>
 
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## О нашем проекте
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
+Наша команда с энтузиазмом принялась за создание визуальной новеллы под названием "Zero Keep Out". Мы решили использовать Ren'Py - мощный и гибкий движок для создания визуальных новелл, который позволяет легко реализовать сложные сюжеты и интерактивные элементы.
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+## Этапы разработки проекта
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+1. **Идея и концепция**: Мы провели много времени над разработкой уникального сюжета, персонажей и мира "Zero Keep Out", чтобы создать захватывающий и запоминающийся опыт для игроков.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+2. **Сценарий и диалоги**: Наша команда тщательно проработала сценарий и диалоги, чтобы каждый персонаж был уникальным и интересным.
+
+3. **Дизайн и иллюстрации**: Художник вложил много усилий в создание красочных и детальных иллюстраций, чтобы визуализировать мир "Zero Keep Out" и его обитателей.
+
+4. **Программирование и тестирование**: Наша команда использовала Ren'Py для программирования игровой логики, анимаций и интерактивных элементов.
+
+## Вложенные усилия и страсть
+
+Мы все вложили в этот проект много сил, страсти и творческого потенциала. Каждый из нас принес вклад в создание "Zero Keep Out", стремясь сделать игру незабываемой и захватывающей для игроков. Наша команда была единой в своем стремлении к совершенству, и мы гордимся результатом нашей работы.
 
 Use the `BLANK_README.md` to get started.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Назад к списку</a>)</p>
 
 
 
-### Built With
+### Создано с помощью RenPy
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Ren'Py: мощная платформа для создания визуальных новелл
+Наша команда использовала Ren'Py, бесплатную платформу для создания визуальных новелл, которая позволяет пользователям создавать свои собственные сюжетные игры. Ren'Py поставляется с рядом инструментов, которые помогают пользователям легко добавлять различные элементы в свои игры, такие как изображения и музыку. Платформа известна своей простотой в использовании, что делает ее доступной для людей, которые никогда раньше не создавали игры на платформе такого типа.
+# Примеры созданных на Ren'Py новелл
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+1) Тук тук литературный клуб (<strong>Doki Doki Literature Club</strong>): Эта популярная визуальная новелла, разработанная и опубликованная Team Salvato, была создана с использованием движка Ren'Py. Игра сочетает элементы жанра визуальной новеллы с элементами психологического ужастика, что сделало ее уникальной и захватывающей для игроков.
+  
+2) Бесконечное лето (<strong>Everlasting Summer</strong>): Еще один пример успешной визуальной новеллы, созданной на движке Ren'Py. "Бесконечное лето" предлагает игрокам уникальный сюжет и интересные персонажи, что сделало ее популярной среди любителей визуальных новелл.
+   
+# Ресурсы для создателей новелл
+Для тех, кто хочет создавать свои визуальные новеллы на Ren'Py, есть доступ к ресурсам, таким как Краткое руководство (Quickstart) на Ren'Py Wiki, которое помогает новичкам начать создавать игры на платформе. Кроме того, есть учебный курс по разработке новелл на RenPy от NoveLearn, который рассчитан на новичков и совершенно бесплатен. Эти ресурсы помогают создателям новелл воплотить свои идеи в жизнь.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+# Возможности Ren'Py
+Ren'Py позволяет создавать сложные сюжеты и интерактивные элементы, такие как меню, label'ы, call'ы и jump'ы. Эти элементы помогают создателям новелл создавать детальные и интерактивные истории. Ren'Py также имеет активное сообщество, где создатели новелл могут найти ответы на свои вопросы и поделиться своими проектами.
+В целом, Ren'Py является мощной платформой для создания визуальных новелл, которая позволяет создателям воплотить свои идеи в жизнь. 
+
+<p align="right">(<a href="#readme-top">Назад к списку</a>)</p>
 
 
 
