@@ -14,52 +14,12 @@ init python:
     import renpy.exports as renpy
 default preferences.audio_when_minimized = False 
 
-# label open_document:
-#     python:
-#         import os
-#         import platform
-#         import subprocess
-
-#         # Путь к файлу, относительно директории игры
-#         file_path = "documents/document.txt"
-#         full_path = os.path.join(renpy.config.gamedir, file_path)
-
-#         # Проверяем операционную систему
-#         if platform.system() == "Windows": # Для настоящих мужчин
-#             subprocess.Popen(["start", full_path], shell=True)
-#         elif platform.system() == "Darwin": # Для мака
-#             subprocess.Popen(["open", full_path])
-#         else:  # Для линуксов
-#             subprocess.Popen(["xdg-open", full_path])
-
-
-#     return
-
-image lil_darkie = Glitch("lil_darkie.png")  
-image lil_darkie_two = Glitch("lil_darkie_two.png")  
-
-
-# Создание экрана выбора главы
 
 # Определение персонажей игры.
 define effi = Character('Эффи', color="#000000")
 define gg = Character('[gg]', color="#000000")
 define kidzuki = Character('Кидзуки', color="#000000") 
 define noe = Character('Ное', color="#000000")
-
-# Даты, которые будут говорить
-# define 20 = Character('20.01. XXXX', color="#000000")
-# define 24 = Character('24.01. XXXX', color="#000000")
-# define 30 = Character('30.02. XXXX', color="#000000")
-# define 31 = Character('31.02. XXXX', color="#000000")
-
-
-
-""" 
-Вместо использования оператора image можете просто складывать все ваши файлы изображений в папку 
-images. Например, сцену bg room можно вызвать файлом "bg room.png", а eileen happy — "eileen happy.webp",
-и тогда они появятся в игре.
-"""
 
 init python:
     # Функция для установки музыки главного меню
@@ -91,8 +51,9 @@ label chapter_one:
     $ gg = gg.strip()
     if not gg:
         $gg = "Я" 
-    gg "Мое имя [gg]"
+    # gg "Мое имя [gg]"
     
+    # call final_dream_1
     
     scene room at zoom_1
         
@@ -108,6 +69,7 @@ label chapter_one:
     "Мать с ним очень часто ругалась."
     "Это в принципе не важно, Я не особо застал тот момент. "
     scene blob_room at zoom_1
+    hide room
         
     "Мне не нравится"
     "Я не ХОЧУ"
@@ -135,7 +97,7 @@ label chapter_one:
     "Хочется быть комком."
     effi "Это наша первая встреча."
     effi "Как ты думаешь, что произойдет?"
-    scene bg fonnav
+    scene bg fonnav2
     hide black
     hide black 
     jump NAC  
@@ -144,7 +106,7 @@ return
 
 label NAC:
     camera at parallax_on
-    scene bg fonnav
+    scene bg fonnav2
     # $ persistent.changed_background = True
     # $ renpy.save_persistent()
   
@@ -179,7 +141,7 @@ label paralax:
     gg"Так резко сократить расстояние."
     gg" " #чтото типа неловкой паузы 
 
-    scene bg fonnav 
+    scene bg fonnav2 
     show effi_happy_u at effi_position
       
     gg"Я никогда не думал, что расстояние не может быть подвергнуто единицам измерения, но осознав то, что я так его и не почувствовал, я сделал для себя неожиданные выводы."
@@ -278,7 +240,7 @@ label paralax:
     show black with zoomin and Dissolve(2.6)
     jump posleSna
     
-    hide fonnav
+    hide fonnav2
 return
 label posleSna:
     camera at parallax_off
@@ -303,7 +265,6 @@ label posleSna:
     hide black at zoom_1
     
     "Моя мама всё так же стоит и улыбается мне так непринужденно. Она явно выглядела счастливой."
-    #  что за возвращение? не выкупил
     "Который раз она терпит такого мудака как я, но продолжает улыбаться мне каждый мой день и ждёт моего «возвращения»." 
 
     "К горлу у меня снова подкатил ком."
@@ -339,7 +300,7 @@ label posleSna:
     "Остаток своего дня я провел довольно продуктивно."
     "Казалось, что моя сетчатка разрывается  после слез за обеденным столом и мешает мне заполнять все те бланки, которые я должен был подписать ещё несколько занятий назад."
     "Я сделал львиную долю всей своей домашней работы, а также начал готовить свою сумку для начала нового завтрашнего дня."
-    jump scnd_chapterS
+    jump scnd_chapter
 return
 
 label scnd_chapter:
@@ -423,7 +384,7 @@ label scnd_chapter:
     "Возможно, ей бы стоило задуматься над этим. Скорее всего, она виновата в этом, если не смогла удержать в своих руках всё то, что окружало её. Мне кажется, ей стоило бы быть немного тверже и решительнее."
     "Не понимаю почему, но что-то мне подсказывает, что это именно то, что ей не хватает."
     "«И всё-таки почему»"
-    scene bg fonnav
+    scene bg fonnav2
     hide black
     gg"-И все-таки почему я её не вижу. Мне казалось, она будет где-то именно здесь, на месте нашей прошлой встречи."
     "И я искал её долго, очень долго. В конце концов поле было бесконечным и его границы не имели четкого ограничения. Я как будто каждый раз неуклюже топтался на одном и том же месте."
@@ -636,13 +597,14 @@ label Hes_yshol:
     "Там же у меня был кореш, с которым я проводил всё свое время, которое было мне дано на момент нахождения в стенах заведения."
     "После учёбы я пошёл посидеть в парк неподалёку. На лавочках было довольно много народа оно и не удивительно, учебный день окончен."
     "В парке была небольшая кофейня, в которую меня и позвал Кидзуки."
-    scene cafe at zoom_1
+    scene bg cafe at zoom_1
 
-    show kidz_smile at effi_position
+    show kidzuki_smile2 at effi_position
     kidzuki "Мы, кажется, почти пришли!?"
     gg "Я до сих пор не особо верю, что вытащил тебя куда-то в люди."
     gg "В последнее время ты не выходил не то чтобы на улицу, а даже из комнаты."
     gg "Мне все рассказала Ное."
+    hide kidzuki_smile2
 
     menu:
         "Что она тебе успела наговорить?":

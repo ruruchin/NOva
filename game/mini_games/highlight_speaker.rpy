@@ -1,6 +1,3 @@
-# Объединенный файл с автоматическим выделением говорящего зумом и цветом
-
-# Параметры пузыря по умолчанию
 init -1 python:
     mark_t = .25
     sprite_brightness = .1
@@ -8,25 +5,14 @@ init -1 python:
     sprite_yalign = 1.
     sprite_yanchor = 1.
 
-# Объявление персонажей
-# init python:
-#     narrator = CH()
-#     lika = CH(_("ЛИКА"), color="#e85")
-#     likab = CHBM(_("ЛИКА"), tag="lika", b_ypos=.65, color="#e85")
-#     tabita = CH(_("ТАБИТА"), color="#a6b")
-#     tabitab = CHBM(_("ТАБИТА"), tag="tabita", b_ypos=.55, color="#a6b", b_paint = "#25d", b_foreground="bubblew", b_color="#fff", b_outlines=gui.text_outlines)
-
-# Позиция спрайта на экране
 init:
     transform xpos(x=.5):
         anchor(.5, 1.)
         pos(x, 1.)
 
-    # Плавно отключаем выделение персонажа
     transform mark_off_z(t=mark_t):
         ease_quad t matrixcolor BrightnessMatrix(0) zoom 1
 
-    # Плавно включаем выделение персонажа
     transform mark_on_z(t=mark_t, z=sprite_zoom):
         parallel:
             matrixcolor BrightnessMatrix(0)

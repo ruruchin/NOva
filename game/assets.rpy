@@ -4,11 +4,19 @@ define gg = Character('[gg]', color="#000000")
 
 #Описание спрайтов для подсвечивания говорящего
 init python:
-    effi = CH(_("Эффи"), color="#000000")
-    gg_character = CH(_("gg"), color="#000000")
-    kidzuki = CHBM(_("Кидзуки"), tag="kidzuki", color="#000000")
-    noe = CHBM(_("Ное"), tag="noe", color="#000000")
+    kidzuki = CHBM(_("kidzuki_smile1"), tag="kidzuki_smile1", color="#000000")
+    kidzuki = CHBM(_("kidzuki_smile2"), tag="kidzuki_smile2", color="#000000")
+    kidzuki = CHBM(_("kidzuki_smile3"), tag="kidzuki_smile3", color="#000000")
+    kidzuki = CHBM(_("kidzuki_netral1"), tag="kidzuki_netral1", color="#000000")
+    kidzuki = CHBM(_("kidzuki_netral2"), tag="kidzuki_netral2", color="#000000")
+    kidzuki = CHBM(_("kidzuki_netral3"), tag="kidzuki_netral3", color="#000000")
 
+    noe = CHBM(_("noe_konfused"), tag="noe_konfused", color="#000000")
+    noe = CHBM(_("noe_konfused2"), tag="noe_konfused2", color="#000000")
+    noe = CHBM(_("noe_smile1"), tag="noe_smile1", color="#000000")
+    noe = CHBM(_("noe_smile2"), tag="noe_smile2", color="#000000")
+    noe = CHBM(_("noe_netral"), tag="noe_netral", color="#000000")
+    
 
 #Описание эмоций
 '''Счастье'''
@@ -27,6 +35,9 @@ image effi_no_u =  "images/Effi_emo/u/4.png"
 image effi_no_za = "images/Effi_emo/za/4.png"
 image effi_no_riad2 = "images/Effi_emo/riad/2.png"
 
+image noe_konfused = "images/Noe/konfused.png"
+image noe_konfused2 = "images/Noe/konfused2.png"
+
 '''Довольство'''
 image effi_happy_bok ="images/Effi_emo/bok/5.png"
 image effi_happy_pod = "images/Effi_emo/pod/1.png"
@@ -34,11 +45,12 @@ image effi_happy_riad = "images/Effi_emo/riad/5.png"
 image effi_happy_u =  "images/Effi_emo/u/5.png"
 image effi_happy_za = "images/Effi_emo/za/3.png"
 
-image noe = "images/Noe/smile1.png"
-image noe_smile2 = "images/Noe/smile2.png"
-image noe_smile3 = "images/Noe/netral.png"
+image kidzuki_smile1 = "images/Kidzuki/smile1.png"
+image kidzuki_smile2 = "images/Kidzuki/smile2.png"
+image kidzuki_smile3 = "images/Kidzuki/smile3.png"
 
-image kidzuki = "images/Kidzuki/smile1.png"
+image noe_smile1 = "images/Noe/smile1.png"
+image noe_smile2 = "images/Noe/smile2.png"
 
 """Нейтральные"""
 image effi_netral_bok ="images/Effi_emo/bok/2.png"
@@ -47,6 +59,12 @@ image effi_netral_riad = "images/Effi_emo/riad/4.png"
 image effi_netral_u =  "images/Effi_emo/u/2.png"
 image effi_netral_za = "images/Effi_emo/za/5.png"
 image effi_netral_pod2 = "images/Effi_emo/pod/2.png"
+
+image kidzuki_netral1 = "images/Kidzuki/netral1.png"
+image kidzuki_netral2 = "images/Kidzuki/netral2.png"
+image kidzuki_netral3 = "images/Kidzuki/netral3.png"
+
+image noe_netral = "images/Noe/netral.png"
 
 """Зубы"""
 image effi_teeth_bok ="images/Effi_emo/bok/3.png"

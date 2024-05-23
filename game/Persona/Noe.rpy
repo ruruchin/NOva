@@ -1,27 +1,25 @@
 label забота:
-    show noe_smile1 at effi_position
+    show noe_netral at effi_position
     noe "Идиот. Ты далеко не единственный случай, о котором стоит беспокоиться."
     noe "Ты уже уходил так, но не настолько глубоко, конечно."
     noe "В тому же, ты единственный человек, который знает обо мне кучу вещей."
     noe "С которыми отправиться прямиком в могилу было бы совсем неуместно."
     noe "Конечно, я волновалась!"
-    hide noe_smile1
+    hide noe_netral
 return
-
 
 label сарказм:
-    show noe_smile2 at effi_position
+    show noe_netral at effi_position
     noe "Дурак. Ты такой же черствый, каким и был во время становления затворником."
     noe "Ничего ты не понимаешь в людях. Я уже жалею, что волновалась за тебя."
-    hide noe_smile2
+    hide noe_netral
 return
 
-
 label интерес:
-    show noe_smile3 at effi_position
+    show noe_netral at effi_position
     noe "Ага, ну начнем с того, что я наконец-то ощущаю себя достаточно начитанной."
     noe "И образованной, чтобы сдать экзамены."
     noe "А ты так и будешь всю жизнь сидеть и нагонять то, что мы давно прошли!"
     noe "Кажется, ты не ценишь своё будущее, или оно явно будет у тебя облачным."
-   
+    hide noe_netral
 return

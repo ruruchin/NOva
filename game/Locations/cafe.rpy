@@ -3,55 +3,55 @@ label кафе_внутри:
     "Мы заходим в здание. Мы занимаем столик у окна, и что ж происходит?"
     "Да пришли не только мы, к нам присоединилась Ное. Кажется, это было запланировано."
     "С ней я не виделся в школе, потому что мы учимся в разных корпусах."
-    show noe_smile1 at effi_position
+    show noe_smile2 at effi_position
     noe "Этот дурак наконец-то вышел из дома?"
     "Повалив сумку, она с недовольным выражением лица села с нами за один стол."
-    hide noe_smile1
-    show kidz_smile at effi_position
+    hide noe_smile2
+    show kidzuki_smile2 at effi_position
     kidzuki "Да, он тоже рад тебя видеть. Выглядишь потрепано."
-    hide kidz_smile
+    hide kidzuki_smile2
     show noe_smile2 at effi_position
     noe "А как иначе? Лучше бы кто-то спросил, как у меня дела."
     hide noe_smile2
-    show noe_smile3 at effi_position
+    show noe_netral at effi_position
     noe "Почему люди всегда заходят так издалека? Я очень волновалась в последнее время!"
-    hide noe_smile3
-    show noe_smile2 at effi_position
-    noe "[gg]никогда так далеко не заходил."
+    hide noe_netral
+    show noe_smile1 at effi_position
+    noe "[gg] никогда так далеко не заходил."
+    hide noe_smile1
 
     menu:
         "И ты действительно так обо мне беспокоилась?":
             call забота
-            
-
+    
         "Как будто твоя жизнь бы в момент развалилась":
             call сарказм
-         
-
+        
         "Что произошло пока меня не было?":
             call интерес
            
 
 
 label кафе_разговор:
-    show kidz_smile at effi_position
+    show kidzuki_netral3 at effi_position
     kidzuki "Недавно прошла волна смертей учеников."
     kidzuki "Это было явно из-за того что..."
-    hide kidz_smile
-    show noe_smile3 at effi_position
+    hide kidzuki_netral3
+    show noe_netral at effi_position
     noe "Из-за того что в наши школы теперь прикреплены к новым районам."
     noe "В который входит р-н Камагасаки."
-    hide noe_smile3 
-    show kidz_smile at effi_position
+    hide noe_netral 
+    show kidzuki_netral2 at effi_position
     kidzuki "Я понимаю, к чему ведет Ное, но кажется, это не из-за того, что какие-то «детишки гангстеров» теперь прессуют молодёжь."
     kidzuki "Им не до этого никакого дела."
     gg "Да, но недавно по пути со школы я прошел через Камагасаки..."
-    hide kidz_smile
+    hide kidzuki_netral2
     show noe_smile2 at effi_position
     noe "Дурак."
     hide noe_smile2 
-    show kidz_smile at effi_position
+    show kidzuki_netral1 at effi_position
     kidzuki "Прекрати, Ное, человек впервые видит свет за такой долгий перерыв."
+    hide kidzuki_netral1
 
     menu:
         "Рассказать про труп":
@@ -64,49 +64,49 @@ label кафе_разговор:
 label кафе_продолжение:
     scene bg cafe 
 
-    show kidzuki at xpos(0.3)
-    show noe at xpos(0.7)
+    show kidzuki_netral3 at xpos(0.3)
+    show noe_netral at xpos(0.7)
     
-    $ speaker = "kidzuki"
-    $ sprite_on("kidzuki")
+    $ speaker = "kidzuki_smile1"
+    $ sprite_on("kidzuki_smile1")
     $ sprite_off(False)
 
     kidzuki "Чувааааак, не слушай её,"
     "Ное бьет кулаком по затылку Кидзуки, от чего его выражение лица довольно быстро меняется."
     
-    $ speaker = "kidzuki"
-    $ sprite_on("kidzuki")
+    $ speaker = "kidzuki_netral3"
+    $ sprite_on("kidzuki_netral3")
     $ sprite_off(False)
 
     kidzuki "ДА и ВООБЩЕ блять нинадо"
     "Ное довольно смотрит, приподняв свою голову вверх."
     
-    $ speaker = "kidzuki"
-    $ sprite_on("kidzuki")
+    $ speaker = "kidzuki_netral1"
+    $ sprite_on("kidzuki_netral1")
     $ sprite_off(False)
 
     kidzuki "Ребят, по-моему, нам надо как бы расслабиться типа."
     kidzuki "Мне недавно приснилась довольно жуткая вещь."
     
-    $ speaker = "noe"
-    $ sprite_on("noe")
+    $ speaker = "noe_netral"
+    $ sprite_on("noe_netral")
     $ sprite_off(False)
 
     noe "Что говорит сонник?"
     
-    $ speaker = "kidzuki"
-    $ sprite_on("kidzuki")
+    $ speaker = "kidzuki_netral2"
+    $ sprite_on("kidzuki_netral2")
     $ sprite_off(False)
 
     kidzuki "У меня нет книг в доме, кроме учебных. Я хотел начать что-то, но, по-моему, я не хочу."
     
-    $ speaker = "gg_character"
+    $ speaker = "gg"
     $ sprite_off()
 
-    gg_character "В соннике такой глубокий сюжет!"
+    gg "В соннике такой глубокий сюжет!"
     
-    $ speaker = "kidzuki"
-    $ sprite_on("kidzuki")
+    $ speaker = "kidzuki_netral3"
+    $ sprite_on("kidzuki_netral3")
     $ sprite_off(False)
 
     kidzuki "Короче, ладно, стою я в полной пустоте, вот прям кромешная светлень, я и два человека."
@@ -119,31 +119,31 @@ label кафе_продолжение:
     kidzuki "Я не знаю, что мне следовало делать, но меня охватил страх."
     kidzuki "Я так и не выстрелил. Зачем я её спасал? Чтобы потом убить?"
     
-    $ speaker = "noe"
-    $ sprite_on("noe")
+    $ speaker = "noe_netral"
+    $ sprite_on("noe_netral")
     $ sprite_off(False)
 
     noe "Ну так и что там?"
     
-    $ speaker = "kidzuki"
-    $ sprite_on("kidzuki")
+    $ speaker = "kidzuki_netral2"
+    $ sprite_on("kidzuki_netral2")
     $ sprite_off(False)
 
     kidzuki "Она убила меня, ну так видимо по приколу."
     
-    $ speaker = "noe"
-    $ sprite_on("noe")
+    $ speaker = "noe_konfused"
+    $ sprite_on("noe_konfused")
     $ sprite_off(False)
 
     noe "Ой."
     
-    $ speaker = "gg_character"
+    $ speaker = "gg"
     $ sprite_off()
 
-    gg_character "По приколу?"
+    gg "По приколу?"
     
-    $ speaker = "kidzuki"
-    $ sprite_on("kidzuki")
+    $ speaker = "kidzuki_netral3"
+    $ sprite_on("kidzuki_netral3")
     $ sprite_off(False)
 
     kidzuki "Ну да, потому что она сначала обняла меня, а потом достала нож и тихонько вводила его в меня несколько раз."
@@ -151,14 +151,14 @@ label кафе_продолжение:
     kidzuki "В этот момент я нажимаю на курок, но обойма пистолета пуста."
     kidzuki "На самом деле стрёмное и непонятное дерьмо…"
     
-    $ speaker = "noe"
-    $ sprite_on("noe")
+    $ speaker = "noe_netral"
+    $ sprite_on("noe_netral")
     $ sprite_off(False)
 
     noe "Да, довольно мрачно."
 
     # Завершение диалога
-    $ sprite_off()
+    $ sprite_off(True)
     "Мы еще немного посидели, а потом, собираясь расходиться и попрощавшись с Кидзуки, мы с Ное пошли по домам."
     "Казалось, что я на секунду переместился в детство, когда прогулки были точно такими же."
     "Довольно приятное ощущение спокойствия и необычной суеты, которые так приятно давили на меня, что я не мог нарадоваться изменениям."
@@ -167,7 +167,18 @@ label кафе_продолжение:
     "Мы пришли и уже по старой традиции зашли взять что-нибудь. Это может быть какая-то булочка или просто разного рода сок."
     "Ное всегда ещё покупала жвачку."
     "Расплатившись на кассе, мы выходим из магазина."
-    "Но она не купила жвачку. Простой бутылки воды ей было достаточно, я хотел удивится, но скорее огорчился ведь я пропустил момент когда она поменялась. "
-    "Да, Ное действительно сильно изменилась с последнего раза когда мы с ней встретились"
+    "Но она не купила жвачку. Простой бутылки воды ей было достаточно, я хотел удивиться, но скорее огорчился ведь я пропустил момент когда она поменялась."
+    "Да, Ное действительно сильно изменилась с последнего раза когда мы с ней встретились."
     "Она совершенно новый человек и теперь я даже не знаю что от нее ожидать."
-return
+    "Но она не купила жвачку. Простой бутылки воды ей было достаточно, я хотел удивиться, но скорее огорчился, ведь я пропустил момент, когда она поменялась."
+    "Да, Ное действительно сильно изменилась с последнего раза, когда мы с ней встретились. Она совершенно новый человек, и теперь я даже не знаю, чего от нее ожидать."
+    "Все, что было раньше, останется в прошлом. А в моем чердаке все также пыльно, грязно, но привычно. А я иду домой."
+    "Мы попрощались. "
+    "Попрощались. А я иду домой. Далеко, я иду домой, но он далеко. Настолько, что уже кажется, что я не дойду."
+    "Сегодня я поменял свою жизнь точно так же, как это сделала Ное. Точно так же, как Кидзуки. И чё расслабились-то все."
+    "Но я не меняюсь, я хочу, я повторяю за ними, но я не меняюсь. Они другие. А я все тот же, интересно, помните детство?" # (Эффект пьяницы)
+    "В последнее время мне что-то не хорошо."
+    # ... еще дописать продолжение о том, как он з(с)аснул
+    hide bg cafe 
+
+    call final_dream_1
