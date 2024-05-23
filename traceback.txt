@@ -1,32 +1,1021 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 344, in script
-    $ renpy.call_in_new_context("open_document")
-  File "game/script.rpy", line 344, in <module>
-    $ renpy.call_in_new_context("open_document")
-ScriptError: could not find label 'open_document'.
+  File "game/script.rpy", line 89, in script call
+    call кафе_продолжение
+  File "game/Locations/cafe.rpy", line 104, in script
+    gg "В соннике такой глубокий сюжет!"
+RecursionError: maximum recursion depth exceeded in __instancecheck__
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 344, in script
-    $ renpy.call_in_new_context("open_document")
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\ast.py", line 823, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 344, in <module>
-    $ renpy.call_in_new_context("open_document")
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\game.py", line 358, in call_in_new_context
-    return renpy.execution.run_context(False)
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\execution.py", line 955, in run_context
-    context.run()
-  File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\script.py", line 1103, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'open_document'.
+  File "game/script.rpy", line 89, in script call
+    call кафе_продолжение
+  File "game/Locations/cafe.rpy", line 104, in script
+    gg "В соннике такой глубокий сюжет!"
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\ast.py", line 930, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\exports.py", line 1474, in say
+    who(what, *args, **kwargs)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1335, in __call__
+    who = self.prefix_suffix("who", self.who_prefix, who, self.who_suffix)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1251, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1231, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 218, in _vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 235, in format_field
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1201, in __format__
+    return format(str(self), spec)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\character.py", line 1193, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\substitutions.py", line 261, in substitute
+    s = renpy.translation.translate_string(s)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\translation\__init__.py", line 508, in translate_string
+    return stl.translate(s)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\translation\__init__.py", line 449, in translate
+    notags = re.sub(r"\{\#.*?\}", "", old)
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/re.py", line 210, in sub
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/re.py", line 291, in _compile
+RecursionError: maximum recursion depth exceeded in __instancecheck__
 
-Windows-10-10.0.19045 AMD64
-Ren'Py 8.2.0.24012702
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.1.3.23091805
 Zero Keep Out 1.0
-Tue May 21 23:44:14 2024
+Thu May 23 12:48:26 2024

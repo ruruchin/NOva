@@ -1,8 +1,16 @@
 #Описание персонажей
 define effi = Character('Эффи', color="#000000")
 define gg = Character('[gg]', color="#000000")
-#Описание эмоций
 
+#Описание спрайтов для подсвечивания говорящего
+init python:
+    effi = CH(_("Эффи"), color="#000000")
+    gg_character = CH(_("gg"), color="#000000")
+    kidzuki = CHBM(_("Кидзуки"), tag="kidzuki", color="#000000")
+    noe = CHBM(_("Ное"), tag="noe", color="#000000")
+
+
+#Описание эмоций
 '''Счастье'''
 image effi_smile_bok ="images/Effi_emo/bok/4.png"
 image effi_smile_pod = "images/Effi_emo/pod/1.png"
@@ -25,10 +33,12 @@ image effi_happy_pod = "images/Effi_emo/pod/1.png"
 image effi_happy_riad = "images/Effi_emo/riad/5.png"
 image effi_happy_u =  "images/Effi_emo/u/5.png"
 image effi_happy_za = "images/Effi_emo/za/3.png"
-image noe_smile1 = "images/Noe/smile1.png"
+
+image noe = "images/Noe/smile1.png"
 image noe_smile2 = "images/Noe/smile2.png"
 image noe_smile3 = "images/Noe/netral.png"
-image kidz_smile = "images/Kidzuki/smile1.png"
+
+image kidzuki = "images/Kidzuki/smile1.png"
 
 """Нейтральные"""
 image effi_netral_bok ="images/Effi_emo/bok/2.png"

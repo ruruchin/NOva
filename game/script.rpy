@@ -84,8 +84,8 @@ label start:
 label chapter_one:
     $ renpy.music.play("music/midnight stroll.mp3")
     stop music
-    call lock_init
-    call lock_start
+    # call lock_init
+    # call lock_start
 
     $ gg = renpy.input("Как тебя зовут?")
     $ gg = gg.strip()
