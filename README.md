@@ -22,7 +22,7 @@
 <br />
 
   <h3 align="center">Новелла</h3>
-  <p align="center" color="blue"><strong><span style="color:blue; font-size:32px">Zero keep out</span></strong></p>
+  <p align="center" color="blue"><strong><span style="color:blue; font-size:248px">Zero keep out</span></strong></p>
 
 
 
