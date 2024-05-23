@@ -22,7 +22,7 @@
 <br />
 
   <h3 align="center">Новелла</h3>
-  <h1 align="center" color="blue"><strong>Zero keep out</strong></h1>
+  <h1 align="center" color="blue"><strong><span style="color:blue; font-size:32px">Zero keep out</span></strong></h1>
 
 
 
@@ -45,7 +45,6 @@
 
 <!-- ABOUT THE PROJECT -->
 # О нашем проекте
-markdown
 ![Logo](Read_logo.png)
 Наша команда с энтузиазмом принялась за создание визуальной новеллы под названием "Zero Keep Out". Мы решили использовать Ren'Py - мощный и гибкий движок для создания визуальных новелл, который позволяет легко реализовать сложные сюжеты и интерактивные элементы.
 
