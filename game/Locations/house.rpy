@@ -39,3 +39,4 @@ menu:
         call kill_effi
     "Ничего не предпринимать":
         call do_nothing
+        
