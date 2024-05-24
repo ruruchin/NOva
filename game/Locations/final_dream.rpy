@@ -1,9 +1,17 @@
+define dissolve_slow = Dissolve(1.75)
+
 label final_dream_1: 
     camera at parallax_on
-    scene bg mainmenu  
+    scene bg finaldream1
+    with dissolve_slow
+    scene bg finaldream2
+    with dissolve_slow
+    scene bg finaldream3
+    with dissolve_slow
+    scene bg finaldream4
+    with dissolve_slow
 
-    # scene bg fieldone
-    # hide bg mainmenu
+    scene bg fieldone with zoomin
 
     show effi_smile_riad at effi_position
     effi "Я надеюсь, что сейчас закроются все вопросы. Раз ты такой размякший, что мне остаётся делать?"
@@ -37,7 +45,7 @@ label final_dream_1:
     hide effi_no_za
     show effi_smile_riad at effi_position
     effi "По-моему все просто, да?"
-    # hide effi_smile_riad
+    hide effi_smile_riad
 
     menu:
         "Да":
@@ -47,8 +55,7 @@ label final_dream_1:
             call final_dream_why
 
 label final_dream_2:
-    # scene bg fieldtwo
-    # hide bg fieldone
+    scene bg fieldtwo with zoomout
 
     show effi_happy_pod at effi_position
     effi "Ну вот смотри, сейчас будет ебейший лайфхак! Вот я сливаюсь с тобой да? Ну да, я уже этим занята."
@@ -97,4 +104,4 @@ label final_dream_2:
     gg "Я не закрывал дверь!?"
     gg "Где ключ...."
     gg "ДА МНЕ ТУТ ТРЯХНУЛО КАБИНУ ОЧЕНЬ ДАЖЕ ХОРОШО! МММММММММ"
-    hide bg cafe
+    

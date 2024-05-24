@@ -1,8 +1,8 @@
 init python:
-    lock_key_t = 0.25  # V перемещания отмычки 
-    lock_min_t, lock_max_t = 0.35, 0.65  # V сокращение пружины  
-    lock_pin_xstep = 154  # между штифтами
-    lock_pin_ystep = 80  # ход пружины 
+    lock_key_t = 0.3  
+    lock_min_t, lock_max_t = 0.35, 0.55  
+    lock_pin_xstep = 154 
+    lock_pin_ystep = 80
     lock_pin_width, lock_pin_height = 100, 140
     lock_spr_height = 210
     lock_spr_x0, lock_spr_y0 = 375, 170
@@ -28,7 +28,7 @@ init python:
 
     def lock_spr_at_f(i: int, trans: 'Transformation', curr_time: float, at: float) -> float:
         """
-        определяет текущее состояние пружины, растягивая её в зависимости от положения штифта
+        Определение текущего состояния пружины, растягивая её в зависимости от положения штифта
         """
         if i < len(lock_pin):
             trans.anchor = (0, 0)
@@ -38,7 +38,7 @@ init python:
 
     def lock_pin_at_f(i: int , trans, curr_time: float, at: float) -> float:
         """ 
-        определение текущего состояния штифта
+        Определение текущего состояния штифта
         """
         global lock_pin
 
@@ -65,7 +65,10 @@ init python:
 
         return 1/60.
 
-    def lock_collision():
+    def lock_collision() -> bool:
+        """
+        Проверяет столкновения отмычки и штифта
+        """
         global lock_check, lock_error, lock_i
 
         x, y, w, h = get_sprite_bounds("key")

@@ -6,6 +6,7 @@ label final_dream_yes:
     effi "Я даже слышу, как ты нервничаешь. Но нененененене ненадо так беспокоиться!"
     hide effi_smile_u
     call final_dream_2
+    hide bg fieldone
 
 label final_dream_why:
     show effi_no_pod at effi_position
@@ -16,3 +17,4 @@ label final_dream_why:
     effi "Ну вот и правильно, не забывай пожалуйста, я хочу, чтобы ты меня не разочаровывал, если окажешься лгуном, я этого не потерплю."
     hide effi_smile_pod2
     call final_dream_2
+    hide bg fieldone
