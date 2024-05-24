@@ -198,10 +198,10 @@ label paralax:
 
     menu: 
         "Что-то типа паразита?":
-            call parasit from _call_parasit
+            call parasit
             pass
         "Ты довольна?":
-            call blago from _call_blago 
+            call blago 
             pass  
     hide effi_teeth_bok
     show effi_no_bok at effi_position
@@ -620,10 +620,10 @@ label Hes_yshol:
     
     menu:
         "Подойти ближе":
-            call label_podoyti_blyzhe from _call_label_podoyti_blyzhe
+            call label_podoyti_blyzhe
         
         "Не подходить":
-            call label_ne_podhodit from _call_label_ne_podhodit
+            call label_ne_podhodit
     return
 label posle:
     camera at parallax_off
@@ -672,8 +672,8 @@ label posle:
 
     menu:
         "Что она тебе успела наговорить?":
-            call рассказать from _call_рассказать
+            call рассказать
             
         "Как у неё язык изо рта еще не выпал":
-            call язвить from _call_язвить     
+            call язвить     
 return

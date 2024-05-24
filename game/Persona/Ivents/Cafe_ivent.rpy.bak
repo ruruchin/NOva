@@ -37,9 +37,9 @@ label просто_мимо:
     hide noe_konfused2
     menu:
         "Да":
-            call da_one from _call_da_one
+            call da_one
         "Передразнить Ное":
-            call draznit from _call_draznit
+            call draznit
     return
 
 label da_one:

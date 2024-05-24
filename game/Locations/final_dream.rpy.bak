@@ -51,10 +51,10 @@ label final_dream_1:
 
     menu:
         "Да":
-            call final_dream_yes from _call_final_dream_yes
+            call final_dream_yes
 
         "Ты не можешь так, почему?":
-            call final_dream_why from _call_final_dream_why
+            call final_dream_why
 
 label final_dream_2:
     $ sprite_off(True)
@@ -108,4 +108,4 @@ label final_dream_2:
     gg "Где ключ...."
     gg "ДА МНЕ ТУТ ТРЯХНУЛО КАБИНУ ОЧЕНЬ ДАЖЕ ХОРОШО! МММММММММ"
 
-    call scene_room from _call_scene_room
+    call scene_room

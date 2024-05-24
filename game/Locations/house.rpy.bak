@@ -8,8 +8,8 @@ label scene_room:
     gg "В любом случае мне нужно выйти отсюда!"
     gg "Я достал первую попавшуюся палку у себя в комнате, а также какой-то железный язычок. По-моему, в детстве у меня был конструктор, точно не помню."
     gg "Но, кажется, сейчас у меня нет выхода, кроме как попытаться ломануть свою же дверь! Какой я идиот."
-    call lock_init from _call_lock_init
-    call lock_start from _call_lock_start
+    call lock_init
+    call lock_start
     gg "Получилось!"
     gg "Надо быстрее добраться до кухни и взять..."
     jump scene_kitchen
@@ -39,7 +39,7 @@ label scene_kitchen:
 
 menu:
     "Убить Эффи":
-        call kill_effi from _call_kill_effi
+        call kill_effi
     "Ничего не предпринимать":
-        call do_nothing from _call_do_nothing
+        call do_nothing
         
