@@ -614,7 +614,7 @@ label Hes_yshol:
     with Dissolve(1.2)
     hide babysadic
     pause 1.2
-    camera at parallax_on
+    
     gg "По дороге домой я увидел совсем молодого парня. Его тело валялось около мусорных пакетов и контейнеров в темном переулке."
     scene bg dead
     hide black
