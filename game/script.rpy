@@ -51,7 +51,7 @@ label chapter_one:
         $gg = "Я" 
     # gg "Мое имя [gg]"
     
-    scene room at zoom_1
+    scene room at zoom_1 with Dissolve(.5)
         
     "20.01. XXXX"
     "Это Я. Самое простое Я, которое может быть."
@@ -63,13 +63,13 @@ label chapter_one:
     "Первым был факт ухода отца из семьи."
     "Мать с ним очень часто ругалась."
     "Это в принципе не важно, Я не особо застал тот момент. "
-    scene blob_room at zoom_1
+    scene blob_room at zoom_1 with Dissolve(.5)
     hide room
         
     "Мне не нравится"
     "Я не ХОЧУ"
    
-    scene black at zoom_1
+    scene black at zoom_1 with Dissolve(.5)
     hide blob_room
     
     "Мне начинает казаться, что я всегда хотел быть частью чего-то целого. Мои одноклассники не особо заинтересованы в общении со мной."
@@ -86,13 +86,13 @@ label chapter_one:
         Чувство, будто я хочу умереть."
      
     "Я комок."
-    scene black at zoom_1
+    scene black at zoom_1 with Dissolve(.5)
      
     
     "Хочется быть комком."
     effi "Это наша первая встреча."
     effi "Как ты думаешь, что произойдет?"
-    scene bg fonnav2
+    scene bg fonnav2    
     hide black
     hide black 
     jump NAC  
@@ -117,10 +117,11 @@ return
 label paralax:
     camera at parallax_on
     scene bg fonnav1
-   
+    
+    scene bg effi_turn_smile
     gg"Приятное лицо. В меру большие круглые глаза. Стройная фигура. Белое длинное платье."
     gg"Она заметила меня и резко перевела свой задумчивый и растерянный взгляд."
-    scene bg pole
+    scene bg effi_turn_konfused with Dissolve(.5) 
     gg"Она стала осторожно подходить ко мне, как бы увидев что-то необычно новое в её жизни."
     gg"Её жизнь..."
     gg"Может быть.."
@@ -244,6 +245,8 @@ label posleSna:
     scene dver at blur(52)
     hide black
     hide effi_no_u
+
+    show door with zoomin and Dissolve(2.6)
     "Я просыпаюсь."
     "Мать стучит в комнату."
     "Я проснулся."
@@ -254,10 +257,9 @@ label posleSna:
     "и каждый раз проходя через это чувство и расстояние между моей кроватью и некой моей оградой от всего сущего, я переживал как бы ни случилось какой-либо беды."
     "Я подошел к двери и набрал воздуха."
     "Я отворил дверь."
-    show black at zoom_1
     $ renpy.music.play("music/open_door.mp3")
     stop music
-    hide black at zoom_1
+    hide door at zoom_1
     
     scene kitchen at zoom_1
     "Моя мама всё так же стоит и улыбается мне так непринужденно. Она явно выглядела счастливой."

@@ -1,6 +1,8 @@
 define dissolve_slow = Dissolve(1.75)
 
 label final_dream_1: 
+    hide bg cafe 
+    $ sprite_off(True)
     camera at parallax_on
     scene bg finaldream1
     with dissolve_slow
@@ -55,6 +57,7 @@ label final_dream_1:
             call final_dream_why
 
 label final_dream_2:
+    $ sprite_off(True)
     scene bg fieldtwo with zoomout
 
     show effi_happy_pod at effi_position
@@ -104,4 +107,5 @@ label final_dream_2:
     gg "Я не закрывал дверь!?"
     gg "Где ключ...."
     gg "ДА МНЕ ТУТ ТРЯХНУЛО КАБИНУ ОЧЕНЬ ДАЖЕ ХОРОШО! МММММММММ"
-    
+
+    call scene_room

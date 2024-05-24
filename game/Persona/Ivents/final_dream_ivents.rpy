@@ -9,6 +9,7 @@ label final_dream_yes:
     hide bg fieldone
 
 label final_dream_why:
+    $ sprite_off(True)
     show effi_no_pod at effi_position
     effi "Нененене, ты не понял, да? Вот смотри, я же говорила тебе отвечать только да? Да?"
     gg "да"

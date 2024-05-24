@@ -46,6 +46,7 @@
 <!-- ABOUT THE PROJECT -->
 # О нашем проекте
 ![Logo](Read_logo.png)
+![Sketch](sketch.jpg)
 Наша команда с энтузиазмом принялась за создание визуальной новеллы под названием "Zero Keep Out". Мы решили использовать Ren'Py - мощный и гибкий движок для создания визуальных новелл, который позволяет легко реализовать сложные сюжеты и интерактивные элементы.
 
 ## Этапы разработки проекта
@@ -122,6 +123,7 @@ Ren'Py позволяет создавать сложные сюжеты и ин
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]:Read_logo.png
+[product-screenshot2]:sketch.jpg
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
