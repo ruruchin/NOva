@@ -1,15 +1,19 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object ('images/door.png') at 0x0000000004702700>:
-  File "game/script.rpy", line 260, in script
-    "Я боюсь, "
-OSError: Couldn't find file 'images/door.png'.
+While loading <renpy.display.im.Image object ('images/park.jpg') at 0x0000000005eba190>:
+  File "game/script.rpy", line 623, in script call
+    call label_podoyti_blyzhe
+  File "game/script.rpy", line 660, in script
+    "Там же у меня был кореш, с которым я проводил всё свое время, которое было мне дано на момент нахождения в стенах заведения."
+OSError: Couldn't find file 'images/park.jpg'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 260, in script
-    "Я боюсь, "
+  File "game/script.rpy", line 623, in script call
+    call label_podoyti_blyzhe
+  File "game/script.rpy", line 660, in script
+    "Там же у меня был кореш, с которым я проводил всё свое время, которое было мне дано на момент нахождения в стенах заведения."
   File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\ast.py", line 2557, in execute
     Say.execute(self)
   File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\ast.py", line 615, in execute
@@ -74,9 +78,9 @@ Full traceback:
     filelike = renpy.loader.load(self.filename, directory="images")
   File "C:\Users\User\Desktop\Book\renpy-8.2.0-sdk\renpy\loader.py", line 672, in load
     raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'images/door.png'.
+OSError: Couldn't find file 'images/park.jpg'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.0.24012702
 Zero Keep Out 1.0
-Fri May 24 10:14:35 2024
+Fri May 24 11:08:56 2024

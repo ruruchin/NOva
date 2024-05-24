@@ -14,18 +14,20 @@ label label_podoyti_blyzhe:
     gg "Постоянные патрули. Даже сейчас я не чувствую себя в полной безопасности, хах. Даже не знаю почему."
     gg "А может, потому что наисвежайший труп парня моего возраста лежит практически за моей спиной. Он явно не выглядит нормально. А я пиздец замёрз."
     gg "Надо двигаться. Мало ли что может случиться, если меня увидят здесь кто-либо из мужчин в форме. Время сейчас не особо располагает, да и проблем явно не оберусь."
+    camera at parallax_off
     scene black at zoom_1
     hide bg dead
     with Dissolve(1.0)
-    scene room
+    scene bg room at zoom_1
     gg "Я дома, весь в поту, уставший и злой. Нахуй я вообще туда полез, был ли в этом какой-то резон?"
     gg "Иногда люди совершают ужасные вещи. Мама, кажется, спит, надо постараться быть немного да тише. Я всё ещё дрожу, думаю, надо лечь спать пораньше."
-    scene black at zoom_1
+   
     with Dissolve(1.0)
-    hide room with Dissolve(1.0)
+    hide room with Dissolve(1.0) 
+    scene black at zoom_1
+    jump posle
     return
-    hide bg dead 
-
+   
 label label_ne_podhodit:
     hide street_dead
     camera at parallax_on
@@ -46,14 +48,17 @@ label label_ne_podhodit:
     scene black at zoom_1
     hide bg dead_dark
     with Dissolve(1.0)
-    scene room
+    scene bg room at zoom_1
     gg "Я дома, всё довольно спокойно. Мама в это время ложится спать, не хочу ее будить. Надо бы и мне отойти ко сну, день сегодня был довольно насыщенным. Думаю, лягу пораньше."
     scene black at zoom_1
     with Dissolve(1.0)
     hide room with Dissolve(1.0)
-    return
+    camera at parallax_off
     hide bg dead_dark
-
+    jump posle
+    return
+ 
+    
 """РАССКАЗ ПРО ТРУП В КАФЕ"""
 
 

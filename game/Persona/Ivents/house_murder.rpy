@@ -1,6 +1,6 @@
 label kill_effi:
-    camera at parallax_on 
-    scene bg effi_kitchen_coock with dissolve
+    camera at parallax_off 
+    show bg effi_kitchen_coock 
     show bg effi_kitchen_coock at walk(0.5, 3, step="step.ogg")
     $ renpy.pause(1)
 
