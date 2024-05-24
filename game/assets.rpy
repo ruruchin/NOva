@@ -15,8 +15,7 @@ init python:
     noe = CHBM(_("noe_konfused2"), tag="noe_konfused2", color="#000000")
     noe = CHBM(_("noe_smile1"), tag="noe_smile1", color="#000000")
     noe = CHBM(_("noe_smile2"), tag="noe_smile2", color="#000000")
-    noe = CHBM(_("noe_netral"), tag="noe_netral", color="#000000")
-    
+    noe = CHBM(_("noe_netral"), tag="noe_netral", color="#000000")   
 
 #Описание эмоций
 '''Счастье'''
@@ -73,5 +72,10 @@ image effi_teeth_riad = "images/Effi_emo/riad/3.png"
 image effi_teeth_u =  "images/Effi_emo/u/3.png"
 image effi_teeth_za = "images/Effi_emo/za/2.png"
 
-#Описание фонов
-
+#Описание сцен с убйиством
+image bg effi_kitchen_coock = "bg effi_kitchen_coock.png"
+image bg effi_kitchen_behind = Glitch("bg effi_kitchen_behind.png", _fps=5)
+image bg mother_kitchen_behind = Glitch("bg mother_kitchen_behind.png", _fps=5)
+image bg effi_kitchen_behind_knife = Glitch("bg effi_kitchen_behind_knife.png", _fps=5)
+image bg mother_kitchen_behind_knife = Glitch("bg mother_kitchen_behind_knife.png", _fps=5)
+image bg mother_kitchen_floor = "bg mother_kitchen_floor.png"

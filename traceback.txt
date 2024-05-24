@@ -2,33 +2,37 @@
 
 While running game code:
   File "game/script.rpy", line 54, in script call
-    call final_dream_1
-  File "game/Locations/final_dream.rpy", line 14, in script
-    scene fieldone at zoomin
-AttributeError: 'NoneType' object has no attribute 'get_placement'
+    call scene_kitchen
+  File "game/Locations/house.rpy", line 39, in script call
+    call kill_effi
+  File "game/Persona/Ivents/house_murder.rpy", line 93, in script
+    scene bg black with dissolve
+Exception: Image 'bg' does not accept attributes 'black'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "game/script.rpy", line 54, in script call
-    call final_dream_1
-  File "game/Locations/final_dream.rpy", line 14, in script
-    scene fieldone at zoomin
+    call scene_kitchen
+  File "game/Locations/house.rpy", line 39, in script call
+    call kill_effi
+  File "game/Persona/Ivents/house_murder.rpy", line 93, in script
+    scene bg black with dissolve
   File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\ast.py", line 1562, in execute
     show_imspec(self.imspec, atl=getattr(self, "atl", None))
   File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\ast.py", line 1391, in show_imspec
     renpy.config.show(name,
-  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\exports.py", line 745, in show
-    img = i(img) # type: ignore
-  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\display\movetransition.py", line 339, in OldMoveTransition
-    rv = merge_slide(old_widget, new_widget)
-  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\display\movetransition.py", line 190, in merge_slide
-    new_pos = position(new)
-  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\display\movetransition.py", line 37, in position
-    xpos, ypos, xanchor, yanchor, _xoffset, _yoffset, _subpixel = d.get_placement()
-AttributeError: 'NoneType' object has no attribute 'get_placement'
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\exports.py", line 733, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\display\core.py", line 499, in _duplicate
+    args.extraneous()
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\display\core.py", line 362, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'bg' does not accept attributes 'black'.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.1.3.23091805
 Zero Keep Out 1.0
-Fri May 24 02:43:04 2024
+Fri May 24 07:00:07 2024

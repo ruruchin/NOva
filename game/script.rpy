@@ -51,6 +51,8 @@ label chapter_one:
         $gg = "Я" 
     # gg "Мое имя [gg]"
     
+    call scene_kitchen
+    
     scene room at zoom_1 with Dissolve(.5)
         
     "20.01. XXXX"
