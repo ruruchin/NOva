@@ -106,63 +106,7 @@ Ren'Py позволяет создавать сложные сюжеты и ин
 Разработчик на Ren'Py, Музыкант, Тестировщик<br>
 Ссылка на GitHub: https://github.com/bybuss<br>
 
-# Галерея
-# Моя Красивая Галерея
 
-<style>
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-  .gallery img {
-    border-radius: 10px;
-    transition: transform 0.3s;
-  }
-  .gallery img:hover {
-    transform: scale(1.1);
-  }
-  .gallery-item {
-    position: relative;
-    overflow: hidden;
-  }
-  .gallery-item img {
-    max-width: 100%;
-    height: auto;
-  }
-  .gallery-item:nth-child(1) img {
-    width: 300px;
-    height: 200px;
-  }
-  .gallery-item:nth-child(2) img {
-    width: 200px;
-    height: 300px;
-  }
-  .gallery-item:nth-child(3) img {
-    width: 250px;
-    height: 250px;
-  }
-  .gallery-item:nth-child(4) img {
-    width: 300px;
-    height: 200px;
-  }
-</style>
-
-<div class="gallery">
-  <div class="gallery-item">
-    <img src="images/image1.png" alt="Пример изображения 1">
-  </div>
-  <div class="gallery-item">
-    <img src="images/image2.png" alt="Пример изображения 2">
-  </div>
-  <div class="gallery-item">
-    <img src="images/image3.png" alt="Пример изображения 3">
-  </div>
-  <div class="gallery-item">
-    <img src="images/image4.png" alt="Пример изображения 4">
-  </div>
-</div>
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
