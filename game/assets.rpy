@@ -1,4 +1,4 @@
-#Описание персонажей
+#  Описание персонажей
 define effi = Character('Эффи', color="#000000")
 define gg = Character('[gg]', color="#000000")
 
@@ -17,7 +17,7 @@ init python:
     noe = CHBM(_("noe_smile2"), tag="noe_smile2", color="#000000")
     noe = CHBM(_("noe_netral"), tag="noe_netral", color="#000000")   
 
-#Описание эмоций
+#  Описание эмоций
 '''Счастье'''
 image effi_smile_bok ="images/Effi_emo/bok/4.png"
 image effi_smile_pod = "images/Effi_emo/pod/1.png"
@@ -72,7 +72,7 @@ image effi_teeth_riad = "images/Effi_emo/riad/3.png"
 image effi_teeth_u =  "images/Effi_emo/u/3.png"
 image effi_teeth_za = "images/Effi_emo/za/2.png"
 
-#Описание сцен с убйиством
+#  Описание сцен с убйиством
 image bg kitchen_top = "bg kitchen_top.png"
 image bg kitchen_bottom = "bg kitchen_bottom.png"
 
@@ -80,8 +80,50 @@ image effi_kitchen_coock = "effi_kitchen_coock.png"
 image effi_kitchen_behind = "effi_kitchen_behind.png"
 image effi_kitchen_behind_knife = "effi_kitchen_behind_knife.png"
 
-image mother_kitchen_cook = Glitch("mother_kitchen_cook.png", _fps=5)
-image mother_kitchen_behind = Glitch("mother_kitchen_behind.png", _fps=5)
-image mother_kitchen_behind_knife = Glitch("mother_kitchen_behind_knife.png", _fps=5)
-image glitch_mother_kitchen_floor = Glitch("mother_kitchen_floor.png", _fps=5)
+image mother_kitchen_cook = Glitch(
+    "mother_kitchen_cook.png",
+    # glitch_strength=0.1, 
+    _fps=4, 
+    min_crop_width=0.25, 
+    max_crop_width=0.35, 
+    min_crop_height=0.35, 
+    max_crop_height=0.45, 
+    color_range1 = (0, 25, 50, 50), 
+    color_range2 = (50, 0, 25, 50)
+)
+image mother_kitchen_behind = Glitch(
+    "mother_kitchen_behind.png",
+    # glitch_strength=0.12, 
+    _fps=4, 
+    min_crop_width=0.25, 
+    max_crop_width=0.35, 
+    min_crop_height=0.35, 
+    max_crop_height=0.45, 
+    color_range1 = (0, 25, 50, 50), 
+    color_range2 = (50, 0, 25, 50)
+)
+image mother_kitchen_behind_knife = Glitch(
+    "mother_kitchen_behind_knife.png",
+    # glitch_strength=0.14, 
+    _fps=4, 
+    min_crop_width=0.25, 
+    max_crop_width=0.35, 
+    min_crop_height=0.35, 
+    max_crop_height=0.45, 
+    color_range1 = (0, 25, 50, 50), 
+    color_range2 = (50, 0, 25, 50)
+)
+image glitch_mother_kitchen_floor = Glitch(
+    "mother_kitchen_floor.png",
+    # glitch_strength=0.16, 
+    _fps=4, 
+    min_crop_width=0.25, 
+    max_crop_width=0.35, 
+    min_crop_height=0.35, 
+    max_crop_height=0.45, 
+    color_range1 = (0, 25, 50, 50), 
+    color_range2 = (50, 0, 25, 50)
+)
+
 image mother_kitchen_floor = "mother_kitchen_floor.png"
+  

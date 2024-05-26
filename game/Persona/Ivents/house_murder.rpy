@@ -17,6 +17,35 @@ label repeat_animation(n, mother = False):
         $ i += 1
     return 
 
+# label repeat_animation(n, mother=False):
+#     camera at parallax_on
+#     $ i = 0
+#     while i < n:
+#         scene bg effi_kitchen_behind
+#         show effi_kitchen_behind with dissolve
+#         $ renpy.pause(0.3)
+#         hide effi_kitchen_behind
+#         scene bg effi_kitchen_behind_knife
+#         show effi_kitchen_behind_knife with dissolve
+#         $ renpy.pause(0.3)   
+#         hide effi_kitchen_behind_knife
+#         scene bg effi_kitchen_behind
+#         show effi_kitchen_behind with dissolve
+#         if mother:
+#             hide effi_kitchen_behind_knife
+#             scene bg mother_kitchen_behind
+#             show mother_kitchen_behind_knife with dissolve
+#             $ renpy.pause(0.3)       
+#             hide mother_kitchen_behind_knife
+#             scene bg mother_kitchen_behind_knife
+#             show effi_kitchen_behind_knife with dissolve
+#             $ renpy.pause(0.22)  
+#             hide effi_kitchen_behind_knife
+#             scene bg effi_kitchen_behind
+#             show effi_kitchen_behind with dissolve
+#         $ i += 1
+#     return
+
 label kill_effi:
     camera at parallax_on
     show bg effi_kitchen_coock_bg 
@@ -31,9 +60,9 @@ label kill_effi:
     show effi_kitchen_coock
     $ renpy.pause(0.38)
     hide effi_kitchen_coock
-
+    
     call repeat_animation(1)
-    call repeat_animation(2, mother=True)
+    call repeat_animation(2, mother=True)    
     call repeat_animation(1)
     call repeat_animation(1, mother=True)
 

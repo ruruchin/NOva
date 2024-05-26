@@ -1,32 +1,36 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 50, in script call
-    call kill_effi
-  File "game/Persona/Ivents/house_murder.rpy", line 32, in script call
-    call repeat_animation(2, morher=True)
-  File "game/Persona/Ivents/house_murder.rpy", line 4, in script
-    label repeat_animation(n, mother = False):
-TypeError: Unexpected keyword arguments: 'morher'
+  File "game/assets.rpy", line 83, in script
+    image mother_kitchen_cook = Glitch(
+  File "game/assets.rpy", line 83, in <module>
+    image mother_kitchen_cook = Glitch(
+  File "game/mini_games/glitchs_api.rpy", line 73, in __init__
+    self.glitch_strength = glitch_strength
+  File "game/mini_games/glitchs_api.rpy", line 124, in glitch_strength
+    raise ValueError(__("Некорректное значение 'glitch_strength'"))
+ValueError: Некорректное значение 'glitch_strength'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 50, in script call
-    call kill_effi
-  File "game/Persona/Ivents/house_murder.rpy", line 32, in script call
-    call repeat_animation(2, morher=True)
-  File "game/Persona/Ivents/house_murder.rpy", line 4, in script
-    label repeat_animation(n, mother = False):
-  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\ast.py", line 1081, in execute
-    values = apply_arguments(self.parameters, renpy.store._args, renpy.store._kwargs)
-  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\ast.py", line 296, in apply_arguments
-    return parameters.apply(args, kwargs, ignore_errors)
-  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\ast.py", line 281, in apply
-    raise TypeError(
-TypeError: Unexpected keyword arguments: 'morher'
+  File "game/assets.rpy", line 83, in script
+    image mother_kitchen_cook = Glitch(
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\ast.py", line 1237, in execute
+    img = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\python.py", line 1146, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/assets.rpy", line 83, in <module>
+    image mother_kitchen_cook = Glitch(
+  File "game/mini_games/glitchs_api.rpy", line 73, in __init__
+    self.glitch_strength = glitch_strength
+  File "D:\Soft\RenPy\renpy-8.1.3-sdk\renpy\revertable.py", line 97, in do_mutation
+    return method(self, *args, **kwargs)
+  File "game/mini_games/glitchs_api.rpy", line 124, in glitch_strength
+    raise ValueError(__("Некорректное значение 'glitch_strength'"))
+ValueError: Некорректное значение 'glitch_strength'
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.1.3.23091805
 Zero Keep Out 1.0
-Sun May 26 18:47:27 2024
+Sun May 26 23:51:41 2024
