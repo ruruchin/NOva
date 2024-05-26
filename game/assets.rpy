@@ -80,8 +80,8 @@ image effi_kitchen_coock = "effi_kitchen_coock.png"
 image effi_kitchen_behind = "effi_kitchen_behind.png"
 image effi_kitchen_behind_knife = "effi_kitchen_behind_knife.png"
 
-image mother_kitchen_cook = "mother_kitchen_cook.png"
+image mother_kitchen_cook = Glitch("mother_kitchen_cook.png", _fps=5)
 image mother_kitchen_behind = Glitch("mother_kitchen_behind.png", _fps=5)
 image mother_kitchen_behind_knife = Glitch("mother_kitchen_behind_knife.png", _fps=5)
+image glitch_mother_kitchen_floor = Glitch("mother_kitchen_floor.png", _fps=5)
 image mother_kitchen_floor = "mother_kitchen_floor.png"
-

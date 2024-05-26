@@ -1,6 +1,3 @@
-init:
-    define dissolve = Dissolve(0.5)
-
 label repeat_animation(n, mother = False):
     $ i = 0
     while i < n:
@@ -8,33 +5,46 @@ label repeat_animation(n, mother = False):
         $ renpy.pause(0.3)
         hide effi_kitchen_behind
         show effi_kitchen_behind_knife with dissolve
-        $ renpy.pause(0.4)
+        $ renpy.pause(0.3)
+        hide effi_kitchen_behind_knife
         if mother:
             show mother_kitchen_behind_knife with dissolve
-            $ renpy.pause(0.2)
+            $ renpy.pause(0.3)
             hide mother_kitchen_behind_knife
             show effi_kitchen_behind_knife with dissolve
-            $ renpy.pause(0.3)
+            $ renpy.pause(0.22)
+            hide effi_kitchen_behind_knife
         $ i += 1
     return 
 
 label kill_effi:
     camera at parallax_on
     show bg effi_kitchen_coock_bg 
-    show bg effi_kitchen_coock_bg at walk(0.5, 3, step="step.ogg")
+    show bg effi_kitchen_coock_bg at walk(step="step.ogg")
     $ renpy.pause(1.7)
 
     scene bg kitchen_top
-    call repeat_animation(1)
 
-    hide effi_kitchen_behind_knife
+    show mother_kitchen_cook
+    $ renpy.pause(0.12)
+    hide mother_kitchen_cook
+    show effi_kitchen_coock
+    $ renpy.pause(0.38)
+    hide effi_kitchen_coock
+
+    call repeat_animation(1)
     call repeat_animation(2, mother=True)
+    call repeat_animation(1)
+    call repeat_animation(1, mother=True)
 
     hide bg kitchen_top
     scene bg kitchen_bottom
+    # show glitch_mother_kitchen_floor
+    # $ renpy.pause(0.12)
+    # hide glitch_mother_kitchen_floor
+    with eopen
     show bg kitchen_bottom at blur(32)
     show mother_kitchen_floor at blur(32)
-    with eopen
     show bg kitchen_bottom at blur(0)
     show mother_kitchen_floor at blur(0)
     with dissolve
