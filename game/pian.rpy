@@ -15,12 +15,12 @@ init:
     # пьяный трансформ
     transform drunk():
         parallel:
-            ease 1.5 zoom 1.1 align(.5, 1.)
+            ease 1.5 zoom 1.1 align(.2, 1.)
             ease 1.15 zoom 1.05 align(.0, 1.)
             ease 1.5 zoom 1.1 align(1., 1.)
-            ease 1.25 zoom 1 align(.0, .5)
+            ease 1.5 zoom 1 align(.0, .2)
             ease 1.15 zoom 1.1 align(1., .0)
-            ease 1.25 zoom 1.05 align(.5, .5)
+            ease 1.25 zoom 1.15 align(.2, .2)
             repeat
         parallel:
             ease 1 blur 24

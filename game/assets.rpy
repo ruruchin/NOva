@@ -73,9 +73,15 @@ image effi_teeth_u =  "images/Effi_emo/u/3.png"
 image effi_teeth_za = "images/Effi_emo/za/2.png"
 
 #Описание сцен с убйиством
-image bg effi_kitchen_coock = "bg effi_kitchen_coock.png"
-image bg effi_kitchen_behind = Glitch("bg effi_kitchen_behind.png", _fps=5)
-image bg mother_kitchen_behind = Glitch("bg mother_kitchen_behind.png", _fps=5)
-image bg effi_kitchen_behind_knife = Glitch("bg effi_kitchen_behind_knife.png", _fps=5)
-image bg mother_kitchen_behind_knife = Glitch("bg mother_kitchen_behind_knife.png", _fps=5)
-image bg mother_kitchen_floor = "bg mother_kitchen_floor.png"
+image bg kitchen_top = "bg kitchen_top.png"
+image bg kitchen_bottom = "bg kitchen_bottom.png"
+
+image effi_kitchen_coock = "effi_kitchen_coock.png"
+image effi_kitchen_behind = "effi_kitchen_behind.png"
+image effi_kitchen_behind_knife = "effi_kitchen_behind_knife.png"
+
+image mother_kitchen_cook = "mother_kitchen_cook.png"
+image mother_kitchen_behind = Glitch("mother_kitchen_behind.png", _fps=5)
+image mother_kitchen_behind_knife = Glitch("mother_kitchen_behind_knife.png", _fps=5)
+image mother_kitchen_floor = "mother_kitchen_floor.png"
+

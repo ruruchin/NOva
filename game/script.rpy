@@ -22,12 +22,9 @@ define kidzuki = Character('Кидзуки', color="#000000")
 define noe = Character('Ное', color="#000000")
 
 init python:
-    # Функция для установки музыки главного меню
     def set_main_menu_music():
         if persistent.changed_music:
             renpy.music.play("music/midnight_stroll.mp3")
-# Определение переменных игры
-
 
 # Игра начинается здесь:
 label start:
@@ -39,8 +36,6 @@ label start:
     $ persistent.changed_music = False
     $ renpy.save_persistent()
    
-
-# Определение главы 1
 label chapter_one:
     scene black at zoom_1
     $ renpy.music.play("music/midnight stroll.mp3")
@@ -52,6 +47,7 @@ label chapter_one:
         $gg = "Я" 
 
     # gg "Мое имя [gg]"
+    call kill_effi
       
     
     scene room at zoom_1 with Dissolve(.5)
