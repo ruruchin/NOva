@@ -1,9 +1,9 @@
 label label_podoyti_blyzhe:
-    hide street_dead
     camera at parallax_on
-    scene black at zoom_1
-    scene bg dead with zoomin
+    scene black with dissolve
+    scene bg dead with dissolve
     hide black
+
     gg "Мной овладело любопытство. Я позволил себе подойти немного ближе. Бездыханное тело все больше давило на меня."
     gg "На лбу стал выступать пот. Кажется, он упарывался не только обычными таблетками. Рядом лежали шприцы и разбитые стеклянные флакончики."
     gg "Вряд-ли от какого-то парфюма - от него явно пахло ужасно. И ничего ему не поможет."
@@ -14,26 +14,27 @@ label label_podoyti_blyzhe:
     gg "Постоянные патрули. Даже сейчас я не чувствую себя в полной безопасности, хах. Даже не знаю почему."
     gg "А может, потому что наисвежайший труп парня моего возраста лежит практически за моей спиной. Он явно не выглядит нормально. А я пиздец замёрз."
     gg "Надо двигаться. Мало ли что может случиться, если меня увидят здесь кто-либо из мужчин в форме. Время сейчас не особо располагает, да и проблем явно не оберусь."
+
     camera at parallax_off
-    scene black at zoom_1
-    hide bg dead
-    with Dissolve(1.0)
-    scene bg room at zoom_1
+    scene black with dissolve
+    hide bg dead with dissolve
+    scene bg room with dissolve
+
     gg "Я дома, весь в поту, уставший и злой. Нахуй я вообще туда полез, был ли в этом какой-то резон?"
     gg "Иногда люди совершают ужасные вещи. Мама, кажется, спит, надо постараться быть немного да тише. Я всё ещё дрожу, думаю, надо лечь спать пораньше."
-   
-    with Dissolve(1.0)
-    hide room with Dissolve(1.0) 
-    scene black at zoom_1
+
+    hide bg room with dissolve
+    scene black with dissolve
+
     jump posle
     return
-   
+
 label label_ne_podhodit:
-    hide street_dead
     camera at parallax_on
-    scene black at zoom_1
-    scene bg dead_dark with zoomin
+    scene black with dissolve
+    scene bg dead_dark with dissolve
     hide black
+
     gg "Такой мерзкий и вялый. Даже смотреть тошно. Разрушить свою жизнь так просто. А ведь его даже об этом никто не просил."
     gg "Ничтожество вроде него довольно популярно, он явно получал от этого определенный ~КаЙ~ф."
     gg "Стоит ли говорить то, что на его похоронах его будут оплакивать и сожалеть о его смерти? Я, конечно, не говорю, что это неправильно."
@@ -45,20 +46,17 @@ label label_ne_podhodit:
     gg "Некоторых находят. Находят, как его нашел я. А некоторые просто пропадают без вести."
     gg "Не то что тела, ни единого намека на его существование найти не способны. А что, если все действительно так, как я это представил? Хах."
     gg "Мне кажется, что надо скорее вернуться домой, начинает темнеть."
-    scene black at zoom_1
-    hide bg dead_dark
-    with Dissolve(1.0)
-    scene bg room at zoom_1
-    gg "Я дома, всё довольно спокойно. Мама в это время ложится спать, не хочу ее будить. Надо бы и мне отойти ко сну, день сегодня был довольно насыщенным. Думаю, лягу пораньше."
-    scene black at zoom_1
-    with Dissolve(1.0)
-    hide room with Dissolve(1.0)
+
     camera at parallax_off
-    hide bg dead_dark
+    scene black with dissolve
+    hide bg dead_dark with dissolve
+
+    scene bg room with dissolve
+    gg "Я дома, всё довольно спокойно. Мама в это время ложится спать, не хочу ее будить. Надо бы и мне отойти ко сну, день сегодня был довольно насыщенным. Думаю, лягу пораньше."
+
+    hide bg room with dissolve
+    scene black with dissolve
+    camera at parallax_off
+
     jump posle
     return
- 
-    
-"""РАССКАЗ ПРО ТРУП В КАФЕ"""
-
-

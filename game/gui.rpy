@@ -36,7 +36,7 @@ define gui.idle_color = '#ffffff'
 define gui.idle_small_color = '#000000'
 
 ## Цвет, используемых в кнопках и панелях, когда они наведены.
-define gui.hover_color = '#000000'
+define gui.hover_color = '#6f54e6'
 
 ## Цвет, используемый текстовой кнопкой, когда она выбрана, но не наведена.
 ## Кнопка может быть выбрана, если это текущий экран или текущее значение
@@ -53,7 +53,7 @@ define gui.hover_muted_color = '#ffffff'
 
 ## Цвета, используемые в тексте диалогов и выборов.
 define gui.text_color = '#ffffff'
-define gui.interface_text_color = '#000000'
+define gui.interface_text_color = '#ffffff'
 
 
 ## Шрифты и их размеры #########################################################

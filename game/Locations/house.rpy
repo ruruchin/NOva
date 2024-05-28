@@ -14,6 +14,7 @@ label scene_room:
     gg "Надо быстрее добраться до кухни и взять..."
     jump scene_kitchen
     return
+
 label scene_kitchen:
     camera at parallax_off
     scene kitchen at zoom_1

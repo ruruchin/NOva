@@ -200,6 +200,5 @@ label кафе_продолжение:
     scene black at zoom_1
     with Dissolve(1.2)
     hide bg room2
-     
 
     call final_dream_1 from _call_final_dream_1

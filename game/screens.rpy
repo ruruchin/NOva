@@ -17,6 +17,7 @@ style default:
 
 style input:
     properties gui.text_properties("input", accent=True)
+    color "#ffffff"
     adjust_spacing False
 
 style hyperlink_text:
@@ -305,6 +306,7 @@ screen navigation():
             textbutton _("Загрузить") action ShowMenu("load")
 
             textbutton _("Настройки") action ShowMenu("preferences")
+            textbutton _("Об игре") action ShowMenu("about")
 
         else:
 
@@ -319,11 +321,7 @@ screen navigation():
 
             textbutton _("Завершить повтор") action EndReplay(confirm=True)
 
-        elif not main_menu:
-
-            textbutton _("Главное меню") action MainMenu()
-
-        textbutton _("Об игре") action ShowMenu("about")
+       
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
