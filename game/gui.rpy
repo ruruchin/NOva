@@ -68,7 +68,7 @@ define gui.name_text_font = "Caveat-VariableFont_wght.ttf"
 define gui.interface_text_font = "Lobster-Regular.ttf"
 
 ## Размер нормального текста диалога.
-define gui.text_size = 32
+define gui.text_size = 28
 
 ## Размер имён персонажей.
 define gui.name_text_size = 62

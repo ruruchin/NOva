@@ -81,7 +81,7 @@ screen gamemenu:
             textbutton _("Вернуться") action Return()
             textbutton _("Сохранить") action ShowMenu("save")
             textbutton _("Загрузить") action ShowMenu("load")
-            textbutton _("В меню") action MainMenu()
+            textbutton _("На главную") action MainMenu()
             textbutton _("Настройки") action ShowMenu("preferences")
 
 # перепишем quick_menu, чтобы убрать лишние кнопки
@@ -91,9 +91,9 @@ screen quick_menu():
     if quick_menu:
 
         hbox:
-            align(.975, 1.)
+            align(.500, 0.98)
 
-            spacing 4
+            spacing 70
 
-            textbutton _("←") action Rollback() yalign 1. text_size gui.text_size
-            textbutton _("▤") action ShowMenu('gamemenu') text_yoffset -2 text_size gui.text_size
+            textbutton _("Назад") action Rollback() yalign 1. text_size gui.text_size
+            textbutton _("Меню") action ShowMenu('gamemenu') text_yoffset -2 text_size gui.text_size
