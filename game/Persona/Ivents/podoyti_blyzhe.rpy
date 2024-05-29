@@ -1,9 +1,10 @@
 label label_podoyti_blyzhe:
-    camera at parallax_on
-    scene black with dissolve
+    
+    scene black at zoom_1 
+    with dissolve
     scene bg dead with dissolve
     hide black
-
+    camera at parallax_on
     gg "Мной овладело любопытство. Я позволил себе подойти немного ближе. Бездыханное тело все больше давило на меня."
     gg "На лбу стал выступать пот. Кажется, он упарывался не только обычными таблетками. Рядом лежали шприцы и разбитые стеклянные флакончики."
     gg "Вряд-ли от какого-то парфюма - от него явно пахло ужасно. И ничего ему не поможет."
@@ -16,23 +17,27 @@ label label_podoyti_blyzhe:
     gg "Надо двигаться. Мало ли что может случиться, если меня увидят здесь кто-либо из мужчин в форме. Время сейчас не особо располагает, да и проблем явно не оберусь."
 
     camera at parallax_off
-    scene black with dissolve
-    hide bg dead with dissolve
-    scene bg room with dissolve
-
+    scene black at zoom_1 
+    hide bg dead
+    with dissolve
+    scene bg room2 at zoom_1 
     gg "Я дома, весь в поту, уставший и злой. Нахуй я вообще туда полез, был ли в этом какой-то резон?"
     gg "Иногда люди совершают ужасные вещи. Мама, кажется, спит, надо постараться быть немного да тише. Я всё ещё дрожу, думаю, надо лечь спать пораньше."
-
-    hide bg room with dissolve
-    scene black with dissolve
-
+    hide black
+    scene black at zoom_1 
+    with dissolve
+    hide bg room2
     jump posle
     return
 
 label label_ne_podhodit:
+    
+    scene black at zoom_1 
+    with dissolve
+    
+    scene bg dead_dark 
+    with dissolve
     camera at parallax_on
-    scene black with dissolve
-    scene bg dead_dark with dissolve
     hide black
 
     gg "Такой мерзкий и вялый. Даже смотреть тошно. Разрушить свою жизнь так просто. А ведь его даже об этом никто не просил."
@@ -48,15 +53,17 @@ label label_ne_podhodit:
     gg "Мне кажется, что надо скорее вернуться домой, начинает темнеть."
 
     camera at parallax_off
-    scene black with dissolve
-    hide bg dead_dark with dissolve
-
-    scene bg room with dissolve
+    scene black at zoom_1 
+    with dissolve
+    hide bg dead_dark 
+    
+    scene bg room2 at zoom_1
+    with dissolve
     gg "Я дома, всё довольно спокойно. Мама в это время ложится спать, не хочу ее будить. Надо бы и мне отойти ко сну, день сегодня был довольно насыщенным. Думаю, лягу пораньше."
-
-    hide bg room with dissolve
-    scene black with dissolve
-    camera at parallax_off
-
+    scene black at zoom_1
+    with dissolve
+    hide bg room2 
+    
+    
     jump posle
     return

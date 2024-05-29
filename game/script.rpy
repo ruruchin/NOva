@@ -48,9 +48,10 @@ label chapter_one:
 
     # gg "Мое имя [gg]"
     # call paralax
-    call Hes_yshol
+    # call Hes_yshol
     
-    scene room at zoom_1 with Dissolve(.5)
+    scene room at zoom_1 
+    with Dissolve(.5)
     hide black
     "20.01. XXXX"
     "Это Я. Самое простое Я, которое может быть."
@@ -61,18 +62,21 @@ label chapter_one:
     scene black at zoom_1
     with Dissolve(1.4)
     pause 1.0
-    scene bg mother with Dissolve(1.5)
+    scene bg mother 
+    with Dissolve(1.5)
     hide black
     "Первым был факт ухода отца из семьи."
     "Мать с ним очень часто ругалась."
     "Это в принципе не важно, Я не особо застал тот момент. "
-    scene blob_room at zoom_1 with Dissolve(.5)
+    scene blob_room at zoom_1 
+    with Dissolve(.5)
     hide room
         
     "Мне не нравится"
     "Я не ХОЧУ"
    
-    scene black at zoom_1 with Dissolve(.5)
+    scene black at zoom_1 
+    with Dissolve(.5)
     hide blob_room
     
     "Мне начинает казаться, что я всегда хотел быть частью чего-то целого. Мои одноклассники не особо заинтересованы в общении со мной."
@@ -89,7 +93,8 @@ label chapter_one:
         Чувство, будто я хочу умереть."
      
     "Я комок."
-    scene black at zoom_1 with Dissolve(.5)
+    scene black at zoom_1 
+    with Dissolve(.5)
      
     
     "Хочется быть комком."
@@ -123,7 +128,8 @@ label paralax:
     scene bg effi_turn_smile
     gg"Приятное лицо. В меру большие круглые глаза. Стройная фигура. Белое длинное платье."
     gg"Она заметила меня и резко перевела свой задумчивый и растерянный взгляд."
-    scene bg effi_turn_konfused with Dissolve(.5)
+    scene bg effi_turn_konfused 
+    with Dissolve(.5)
     gg"Она стала осторожно подходить ко мне, как бы увидев что-то необычно новое в её жизни."
     gg"Её жизнь..."
     gg"Может быть.."
